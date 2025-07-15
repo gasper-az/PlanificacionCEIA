@@ -60,7 +60,7 @@
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Se completa hasta el punto 5 inclusive                & {6} de {Julio} de 2025 \\ \hline
-2      & Se completa hasta el punto 9 inclusive                & {14} de {Julio} de 2025 \\ \hline
+2      & Se completa hasta el punto 9 inclusive                & {15} de {Julio} de 2025 \\ \hline
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & {día} de {mes} de 202X \\ \hline
@@ -85,7 +85,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en {el desarrollo de una herramienta basada en Machine Learning que permita predecir si una empresa puede entrar en quiebra o no}. El trabajo tendrá un presupuesto preliminar estimado de {604} horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en {el desarrollo de una herramienta basada en Machine Learning que permitirá predecir si una empresa puede entrar en quiebra o no}. El trabajo tendrá un presupuesto preliminar estimado de {604} horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública el \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -105,17 +105,17 @@ Se adjunta a esta acta la planificación inicial.
 \label{sec:descripcion}
 
 %\begin{consigna}{red} % ELIMINAR \begin{consigna}{red} y \end{consigna}{red} en las secciones que vayan completando para cada entrega parcial.
-Este proyecto consiste en un emprendimiento personal cuyo objetivo es utilizar técnicas de aprendizaje de máquina para detectar si una empresa puede entrar en quiebra o no. Este análisis puede resultar de gran interés y utilidad para distintos participantes del mercado financiero. Por ello, se considerarán como potenciales usuarios finales a empresas especializadas en finanzas, en inversiones, en prestación de seguros, entre otras.
+Este proyecto consiste en un emprendimiento personal cuyo objetivo es utilizar técnicas de aprendizaje de máquina para detectar si una empresa puede entrar en quiebra o no. Este tipo de análisis puede resultar de gran interés y utilidad para distintos actores del mercado financiero, tales como bancos, compañías aseguradoras, fondos de inversión o consultoras especializadas en riesgo crediticio. Por ello, estos se considerarán como potenciales clientes.
 
-Para llevar a cabo al mismo, se utilizará un \textit{dataset} publicado por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}, el cual contiene información financiera de empresas del mercado de Taiwán entre los años 1999 y 2009. Al ser estos datos públicos, hoy en día existen soluciones que exploran esta temática. Algunas de ellas hacen uso de modelos de \textit{machine learning} tales como \textit{SVM} y \textit{XGBoost}, junto con algunas técnicas de preprocesamiento de datos como \textit{Smote} y de búsqueda de hiperparámetros como \textit{Random Search}.
+Para llevarlo a cabo, se utilizará un \textit{dataset} publicado por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}, que contiene información financiera de empresas del mercado de Taiwán entre los años 1999 y 2009. Al ser estos datos públicos, hoy en día existen soluciones que exploran esta temática. Algunas de ellas hacen uso de modelos de \textit{machine learning} tales como \textit{SVM} y \textit{XGBoost}, junto con algunas técnicas de preprocesamiento de datos como \textit{Smote} y de búsqueda de hiperparámetros como \textit{Random Search}.
 
-Con el fin de diferenciarse de estas soluciones, se propone implementar el marco de trabajo basado en \textit{MLFlow} definido en la figura \ref{fig:diagBloques}. En el mismo se detallan una serie de etapas cuyas salidas se refinarán durante distintas iteraciones. Esto permitirá explorar diversas técnicas de preprocesamiento de datos, búsqueda de hiperparámetros y modelos de \textit{machine learning} que ayuden a lograr el objetivo de este proyecto.
+Con el fin de diferenciarse de estas soluciones, se propone implementar el marco de trabajo basado en \textit{MLFlow} definido en la figura \ref{fig:diagBloques}. Se detalla una serie de etapas cuyas salidas se refinarán durante distintas iteraciones. Esto permitirá a los usuarios finales trabajar en un entorno seguro, robusto, y reproducible.
 
-El proyecto se encuentra en la etapa de planificación. El desarrollo e implementación del mismo se realizará en distintas etapas. Se comenzará con un análisis exploratorio de datos, que nos permitirá conocer mejor al dataset en cuestión. Luego, se realizarán diversas iteraciones sobre las siguientes etapas:
+El proyecto se encuentra en la etapa de planificación. El desarrollo e implementación se realizará en distintas etapas. Se comenzará con un análisis exploratorio de datos, que nos permitirá conocer mejor al dataset en cuestión. Luego, se realizarán iteraciones sobre las siguientes etapas:
 
 \begin{itemize}
 	\item Preprocesamiento de datos: en la primer iteración se implementarán técnicas de tratamiento de nulos y desbalance de clases. En las siguientes iteraciones, se estudiarán técnicas de extracción e ingeniería de features.
-	\item Entrenamiento de modelos: se implementará un modelo distinto en cada iteración. Los modelos a explorar son regresión logística, \textit{SVM} y \textit{XGBoost}. También se explorará la optimización de hiperparámetros mediante búsqueda bayesiana.
+	\item Entrenamiento de modelos: se implementará un modelo distinto en cada iteración. Los modelos a explorar son regresión logística, \textit{SVM} y \textit{XGBoost}. También, se explorará la optimización de hiperparámetros mediante búsqueda bayesiana.
 	\item Evaluación y refinamiento: en esta etapa se evaluará al modelo entrenado en la etapa anterior. Se generarán métricas que permitirán compararlo con resultados obtenidos en otras iteraciones.
 \end{itemize}
 
@@ -143,13 +143,15 @@ La innovación de este proyecto radica en el uso del marco de trabajo definido e
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director del Trabajo Final \\ \hline
-Usuario final & Mercado financiero                   & -             	& -       	\\ \hline
+Cliente & Actores del mercado financiero                   & -             	& -       	\\ \hline
+Usuario final & Trabajadores de clientes                   & -             	& -       	\\ \hline
 \end{tabularx}
 \end{table}
 
 \begin{itemize}
 	\item Orientador: podrán ayudar en la recomendación y evaluación de técnicas a explorar en las diferentes etapas del proyecto.
-	\item Usuario final: si bien es un proyecto personal, se considerarán como potenciales usuarios finales a empresas del sector financiero. Estas podrán encontrar interés y utilidad en las predicciones de los modelos explorados.
+	\item Cliente: si bien es un proyecto personal, se considerarán como potenciales clientes a distintos actores del mercado financiero, tales como bancos, compañías aseguradoras, fondos de inversión o consultoras especializadas en riesgo crediticio.
+    \item Usuario final: analistas de riesgos, ejecutivo de créditos, entre otros integrantes que trabajan para los potenciales clientes.
 \end{itemize}
 
 \section{3. Propósito del proyecto}
@@ -162,11 +164,11 @@ Predecir si una empresa puede entrar en quiebra o no, al explorar técnicas de \
 
 El alcance del proyecto incluye:
 \begin{itemize}
-	\item Análisis exploratorio de datos: se analizarán las distintas variables presentes en el \textit{dataset} de estudio, con el fin de conocer sus características y poder tomar decisiones en base a ellas.
-    \item Preprocesamiento de datos: se realizarán técnicas de tratamiento de datos faltantes, selección y/o extracción de features, como así también de ingeniería de features.
+	\item Análisis exploratorio de datos: se analizarán las distintas variables presentes en el \textit{dataset} de estudio, con el fin de conocer sus características y poder tomar decisiones con base en ellas.
+    \item Preprocesamiento de datos: se realizarán técnicas de tratamiento de datos faltantes, selección y/o extracción de variables, como así también de ingeniería de features.
     \item Implementación de modelos de \textit{machine learning}: se estudiarán diversos modelos de aprendizaje de máquina sobre los datos procesados, tales como \textit{logistic regression}, \textit{SVM} y \textit{XGBoost}. Además, se optimizarán los hiperparámetros de estos modelos mediante búsqueda bayesiana.
-    \item Evaluación y comparación de modelos: se obtendrán métricas relacionadas a los modelos explorados, con el fin de poder determinar cual de ellos realiza una mejor predicción.
-    \item Implementación de un entorno basado en \textit{MLFlow}: este entornó facilitará la realización, la reproducibilidad y la escalabilidad de las distintas etapas de trabajo que se realizarán en este proyecto. El mismo será de caracter local, es decir, no se implementará en una plataforma de \textit{cloud computing}.
+    \item Evaluación y comparación de modelos: se obtendrán métricas relacionadas a los modelos explorados, con el fin de poder determinar cuál de ellos realiza una mejor predicción.
+    \item Implementación de un entorno basado en \textit{MLFlow}: este entornó facilitará la realización, la reproducibilidad y la escalabilidad de las distintas etapas de trabajo que se realizarán en este proyecto. Este será de caracter local, es decir, no se implementará en una plataforma de \textit{cloud computing}.
 \end{itemize}
 
 No se incluye:
@@ -204,7 +206,7 @@ Esto son los criterios que se utilizan para ponderar a las historias de usuario 
     \item Incertidumbre: representa el riesgo asociado a la historia de usuario.
 \end{itemize}
 
-Cada criterio tiene asociado las ponderaciones \textit{baja}, \textit{media} y \textit{alta}, las cuales se detallan en el cuadro \ref{table:ponderaciones}. Los \textit{Story Points} de una historia de usuario quedan definidos por la suma de los valores de estas ponderaciones redondeada hacia el número superior más próximo en la serie de \textit{Fibonacci}.
+Cada criterio tiene asociado las ponderaciones \textit{baja}, \textit{media} y \textit{alta}, que se detallan en el cuadro \ref{table:ponderaciones}. Los \textit{Story Points} de una historia de usuario quedan definidos por la suma de los valores de estas ponderaciones redondeada hacia el número superior más próximo en la serie de \textit{Fibonacci}.
 
 \begin{table}[htpb]
 \centering
@@ -316,7 +318,7 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
         \end{itemize}
       \item HU8 - \textit{API} para entorno \textit{MLFlow}
         \begin{itemize}
-            \item Como ingeniero del proyecto, quiero exponer el entorno de \textit{MLFlow} mediante una \textit{API} para facilitar el acceso y el consumo del mismo.
+            \item Como ingeniero del proyecto, quiero exponer el entorno de \textit{MLFlow} mediante una \textit{API} para facilitar el acceso y su consumo.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: Baja - 1 \textit{Story Points}
@@ -407,7 +409,7 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
       \item Criterios de aceptación HU5 - Optimización de hiperparámetros
         \begin{itemize}
             \item Se seleccionan los hiperparámetros de cada modelo a optimizar.
-            \item Se define el rango sobre el cual se optimizará cada hiperparámetro.
+            \item Se define el rango sobre el que se optimizará cada hiperparámetro.
             \item Se realiza una búsqueda del valor óptimo de los hiperparámetros en los rangos definidos.
             \item Se justifican las decisiones tomadas en cada paso.
         \end{itemize}
@@ -462,7 +464,7 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
   \item \textbf{Comprensión del negocio:}
     \begin{itemize}
         \item \textit{Objetivo:} predecir si una empresa va a entrar en quiebra o no.
-        \item \textit{Impacto:} ayudar en la toma de decisiones a empresas especializadas en finanzas, en inversiones, en prestación de seguros, entre otras, permitiéndoles saber si una empresa sobre la cual se quiere invertir o a la cual se le quiere otorgar un préstamo puede entrar en quiebra o no.
+        \item \textit{Impacto:} ayudar en la toma de decisiones a empresas especializadas en finanzas, en inversiones, en prestación de seguros, entre otras, permitiéndoles saber si una empresa sobre la que se quiere invertir o a la que se le quiere otorgar un préstamo puede entrar en quiebra o no.
         \item \textit{Métricas:} se predice correctamente si la empresa quiebra o no.
     \end{itemize}
   \item \textbf{Comprensión de los datos}
