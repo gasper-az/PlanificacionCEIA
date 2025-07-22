@@ -32,6 +32,7 @@
 \fechaFINALTrabajo{a definir}	%Fecha de defensa pública del trabajo final
 
 \usepackage{hyperref}
+\usepackage{xltabular}
 
 \begin{document}
 
@@ -510,605 +511,141 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{itemize}
-    \item HU1 - Análisis exploratorio (21 h).
-        \begin{itemize}
-            \item Identificar variables \textit{categóricas}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Identificar variables \textit{numéricas}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Graficar la distribución de las variables \textit{numéricas}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Realizar análisis de correlaciones entre variables \textit{numéricas}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU2 - Procesamiento de datos faltantes y datos atípicos (64 h).
-        \begin{itemize}
-            \item Investigar técnicas de balanceo de clases para algoritmos de clasificación.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar técnicas de balanceo de clases para algoritmos de clasificación.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Separar \textit{dataset} en \textit{train} y \textit{test}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Identificar variables con datos faltantes.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Analizar causas de datos faltantes.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Corregir datos faltantes.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Identificar datos con valores atípicos.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Analizar causas de datos atípicos.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Graficar variables que presentan de datos atípicos.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Corregir datos atípicos.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU3 - \textit{Feature Engineering} (38 h).
-        \begin{itemize}
-            \item Identificar variables menos importantes para eliminarlas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Implementar técnicas de eliminación de features.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Crear nuevas variables mediante combinaciones lineales de variables existentes.
-                \begin{itemize}
-                    \item \textit{Estimación:} 7 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Investigar otras técnicas de creación de variables.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Aplicar otras técnicas de creación de variables.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar nuevas variables en modelos.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Baja.
-                \end{itemize}
-        \end{itemize}
-    \item HU4 - Implementación de modelos de \textit{Machine Learning} (89 h).
-        \begin{itemize}
-            \item Implementar código de validación cruzada para \textit{Logistic Regression}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar modelo \textit{Logistic Regression}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar modelo \textit{Logistic Regression}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar código de validación cruzada para \textit{SVM}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar modelo \textit{SVM}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar modelo \textit{SVM}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar código de validación cruzada para \textit{XGBoost}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Evaluar modelo \textit{XGBoost}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Persistir modelos en \textit{GitHub}
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h
-                    \item \textit{Prioridad:} Media
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU5 - Optimización de hiperparámetros (118 h).
-        \begin{itemize}
-            \item Identificar hiperparámetros y rangos de \textit{Logistic Regression}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Optimizar hiperparámetros de \textit{Logistic Regression}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Optimizar hiperparámetros de \textit{Logistic Regression}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}            
-            \item Identificar hiperparámetros y rangos de \textit{SVM}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Optimizar hiperparámetros de \textit{SVM}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar hiperparámetros más óptimos en \textit{SVM}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Optimizar hiperparámetros de \textit{SVM}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Implementar hiperparámetros más óptimos en \textit{SVM}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}           
-            \item Identificar hiperparámetros y rangos de \textit{XGBoost}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 7 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Optimizar hiperparámetros de \textit{XGBoost}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Implementar hiperparámetros más óptimos en \textit{XGBoost}, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, sin considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 7 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Optimizar hiperparámetros de \textit{XGBoost}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Implementar hiperparámetros más óptimos en \textit{XGBoost}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 7 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}  
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU6 - Métricas de modelos (56 h).
-        \begin{itemize}
-            \item Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}, y graficar.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, considerando \textit{feature engineering}, y graficar.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}                
-            \item Obtener métricas de \textit{F1-score} para \textit{SVM}, sin  considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, sin  considerar \textit{feature engineering}, y graficar.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{F1-score} para \textit{SVM}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, considerando \textit{feature engineering}, y graficar.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}                
-            \item Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}                
-            \item Comparar métricas de distintos modelos.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU7 - Despliegue en \textit{MLFlow} (66 h).
-        \begin{itemize}
-            \item Investigar buenas prácticas para despliegues de \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Crear entorno local para despliegue \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 7 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-             \item Replicar técnicas de análisis de datos en entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Ejecutar localmente el entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Validar ejecución local del entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU8 - \textit{API} para entorno \textit{MLFlow} (24 h).
-        \begin{itemize}
-            \item Investigar como exponer un entorno \textit{MLFlow} mediante \textit{API}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Exponer resultados de modelos explorados en entorno \textit{MLFlow} mediante \textit{API}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Exponer comparación de modelos en entorno \textit{MLFlow} mediante \textit{API}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Documentar pasos y decisiones tomadas.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Baja.
-                \end{itemize}
-        \end{itemize}
-    \item HU9 - Implementación de buenas prácticas (12 h).
-        \begin{itemize}
-            \item Investigar buenas prácticas en código \textit{Python}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Baja.
-                \end{itemize}
-            \item Aplicar buenas prácticas en código \textit{Python}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU10 - Documentación (14 h).
-        \begin{itemize}
-            \item Asegurar que cada decisión tomada haya sido justificada y documentada.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Asegurar ortografía y formato en documentación.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item HU11 - Validación de \textit{API} de \textit{MLFlow} (21 h).
-        \begin{itemize}
-            \item Validar acceso a modelos explorados mediante \textit{API} de entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Validar acceso a comparación de modelos mediante \textit{API} de entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Crear documentación sobre el uso de \textit{API} de entorno \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}
-    \item Planificación del proyecto y confección de informes de avance (opcional)(32 h).
-        \begin{itemize}
-            \item Planificación del proyecto.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Informe de avance - Secciones 1 a 5 inclusive.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Informe de avance - Secciones 6 a 9 inclusive.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Informe de avance - Secciones 10 a 12 inclusive.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Informe de avance - Secciones 13 a 15 inclusive.
-                \begin{itemize}
-                    \item \textit{Estimación:} 4 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Informe de avance - Correciones generales.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize}   
-    \item Redacción de memoria (opcional)(35 h).
-        \begin{itemize}
-            \item Redacción de sección sobre \textit{procesamiento de datos}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Redacción de sección sobre \textit{Feature Engineering}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 3 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Redacción de sección sobre \textit{implementación de modelos}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 7 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Redacción de sección sobre \textit{optimización de hiperparámetros}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Redacción de sección sobre \textit{MLFlow}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 5 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-            \item Correcciones generales.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Media.
-                \end{itemize}
-        \end{itemize} 
-    \item Preparación de presentación final (opcional)(14 h).
-        \begin{itemize}
-            \item Confección de presentación \textit{PowerPoint}.
-                \begin{itemize}
-                    \item \textit{Estimación:} 6 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-            \item Confección de video demostración.
-                \begin{itemize}
-                    \item \textit{Estimación:} 8 h.
-                    \item \textit{Prioridad:} Alta.
-                \end{itemize}
-        \end{itemize}
-\end{itemize}
+%\begin{table}[htpb]
+%\centering
+\begin{xltabular}{\linewidth}{@{}|X|X|c|c|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0}
+
+\hline \rowcolor[HTML]{C0C0C0} \multicolumn{1}{|X|}{Historia de usuario} & \multicolumn{1}{X|}{Tarea técnica} & \multicolumn{1}{c|}{Estimación} & \multicolumn{1}{|c|}{Prioridad} \\ \hline 
+\endfirsthead
+
+%\multicolumn{4}{c}%
+%{\tablename\ \thetable{} -- continued from previous page} \\
+\hline \rowcolor[HTML]{C0C0C0} \multicolumn{1}{|X|}{Historia de usuario} & \multicolumn{1}{X|}{Tarea técnica} & \multicolumn{1}{c|}{Estimación} & \multicolumn{1}{|c|}{Prioridad} \\ \hline 
+\endhead
+
+%\hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+
+\hline
+\endlastfoot
+
+%Historia de usuario & Tarea técnica & Estimación & Prioridad \\ \hline
+HU1 - Análisis exploratorio & Identificar variables \textit{categóricas} & 4 h & Media \\ \hline
+HU1 - Análisis exploratorio & Identificar variables \textit{numéricas} & 4 h & Media \\ \hline
+HU1 - Análisis exploratorio & Graficar la distribución de las variables \textit{numéricas} & 6 h & Media \\ \hline
+HU1 - Análisis exploratorio & Realizar análisis de correlaciones entre variables \textit{numéricas} & 4 h & Media \\ \hline
+HU1 - Análisis exploratorio & Documentar pasos y decisiones tomadas & 3 h & Media \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Investigar técnicas de balanceo de clases para algoritmos de clasificación & 6 h & Media \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Implementar técnicas de balanceo de clases para algoritmos de clasificación & 5 h & Media \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Separar \textit{dataset} en \textit{train} y \textit{test} & 3 h & Media \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Identificar variables con datos faltantes & 4 h & Alta \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Analizar causas de datos faltantes & 6 h & Alta \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Corregir datos faltantes & 8 h & Alta \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Identificar datos con valores atípicos & 6 h & Alta \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Analizar causas de datos atípicos & 8 h & Alta \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Graficar variables que presentan de datos atípicos & 5 h & Media \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Corregir datos atípicos & 8 h & Alta \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
+HU3 - \textit{Feature Engineering} & Identificar variables menos importantes para eliminarlas & 5 h & Alta \\ \hline
+HU3 - \textit{Feature Engineering} & Implementar técnicas de eliminación de features & 5 h & Media \\ \hline
+HU3 - \textit{Feature Engineering} & Crear nuevas variables mediante combinaciones lineales de variables existentes & 7 h & Alta \\ \hline
+HU3 - \textit{Feature Engineering} & Investigar otras técnicas de creación de variables & 5 h & Media \\ \hline
+HU3 - \textit{Feature Engineering} & Aplicar otras técnicas de creación de variables & 8 h & Alta \\ \hline
+HU3 - \textit{Feature Engineering} & Evaluar nuevas variables en modelos & 5 h & Alta \\ \hline
+HU3 - \textit{Feature Engineering} & Documentar pasos y decisiones tomadas & 3 h & Baja \\ \hline
+\pagebreak
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{Logistic Regression} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, considerando \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{SVM} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, considerando \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{XGBoost} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & 8 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering} & 8 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, considerando \textit{feature engineering} & 6 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Persistir modelos en \textit{GitHub} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{Machine Learning} & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{Logistic Regression} & 5 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, considerando \textit{feature engineering} & 6 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{SVM} & 5 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, considerando \textit{feature engineering} & 6 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{XGBoost} & 7 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, sin considerar \textit{feature engineering} & 8 h & Alta \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, sin considerar \textit{feature engineering} & 5 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, sin considerar \textit{feature engineering} & 7 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, considerando \textit{feature engineering} & 8 h & Alta \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, considerando \textit{feature engineering} & 5 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, considerando \textit{feature engineering} & 7 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, considerando \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, considerando \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, sin  considerar \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, sin  considerar \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, considerando \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, considerando \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Comparar métricas de distintos modelos & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Investigar buenas prácticas para despliegues de \textit{MLFlow} & 5 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Crear entorno local para despliegue \textit{MLFlow} & 7 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de análisis de datos en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Ejecutar localmente el entorno \textit{MLFlow} & 4 h & Media \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Validar ejecución local del entorno \textit{MLFlow} & 4 h & Media \\ \hline
+HU7 - Despliegue en \textit{MLFlow} & Documentar pasos y decisiones tomadas \textit{MLFlow} & 6 h & Media \\ \hline
+HU8 - \textit{API} para entorno \textit{MLFlow} & Investigar como exponer un entorno \textit{MLFlow} mediante \textit{API} & 5 h & Media \\ \hline
+HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer resultados de modelos explorados en entorno \textit{MLFlow} mediante \textit{API} & 8 h & Alta \\ \hline
+HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer comparación de modelos en entorno \textit{MLFlow} mediante \textit{API} & 8 h & Alta \\ \hline
+HU8 - \textit{API} para entorno \textit{MLFlow} & Documentar pasos y decisiones tomadas & 3 h & Baja \\ \hline
+HU9 - Implementación de buenas prácticas & Investigar buenas prácticas en código \textit{Python} & 4 h & Baja \\ \hline
+HU9 - Implementación de buenas prácticas & Aplicar buenas prácticas en código \textit{Python} & 8 h & Media \\ \hline
+HU10 - Documentación & Asegurar que cada decisión tomada haya sido justificada y documentada & 6 h & Media \\ \hline
+HU10 - Documentación & Asegurar ortografía y formato en documentación & 8 h & Media \\ \hline
+HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a modelos explorados mediante \textit{API} de entorno \textit{MLFlow} & 8 h & Media \\ \hline
+HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a comparación de modelos mediante \textit{API} de entorno \textit{MLFlow} & 8 h & Media \\ \hline
+HU11 - Validación de \textit{API} de \textit{MLFlow} & Crear documentación sobre el uso de \textit{API} de entorno \textit{MLFlow} & 5 h & Media \\ \hline
+Planificación del proyecto y confección de informes de avance (opcional) & Planificación del proyecto & 8 h & Alta \\ \hline
+Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Secciones 1 a 5 inclusive & 6 h & Media \\ \hline
+Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Secciones 6 a 9 inclusive & 5 h & Media \\ \hline
+Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Secciones 10 a 12 inclusive & 4 h & Media \\ \hline
+Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Secciones 13 a 15 inclusive & 4 h & Media \\ \hline
+Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Correciones generales & 5 h & Media \\ \hline
+Redacción de memoria (opcional) & Redacción de sección sobre \textit{procesamiento de datos} & 6 h & Media \\ \hline
+Redacción de memoria (opcional) & Redacción de sección sobre \textit{Feature Engineering} & 3 h & Media \\ \hline
+Redacción de memoria (opcional) & Redacción de sección sobre \textit{implementación de modelos} & 7 h & Media \\ \hline
+Redacción de memoria (opcional) & Redacción de sección sobre \textit{optimización de hiperparámetros} & 6 h & Media \\ \hline
+Redacción de memoria (opcional) & Redacción de sección sobre \textit{MLFlow} & 5 h & Media \\ \hline
+Redacción de memoria (opcional) & Correcciones generales & 8 h & Media \\ \hline
+Preparación de presentación final (opcional) & Confección de presentación \textit{PowerPoint} & 6 h & Alta \\ \hline
+Preparación de presentación final (opcional) & Confección de video demostración & 8 h & Alta \\ \hline
+\end{xltabular}
+%\end{table}
 
 \section{10. Planificación de Sprints}
 
