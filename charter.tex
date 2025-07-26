@@ -33,6 +33,7 @@
 
 \usepackage{hyperref}
 \usepackage{xltabular}
+\usepackage{pdflscape}
 
 \begin{document}
 
@@ -62,6 +63,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Se completa hasta el punto 5 inclusive                & {6} de {Julio} de 2025 \\ \hline
 2      & Se completa hasta el punto 9 inclusive                & {15} de {Julio} de 2025 \\ \hline
+3      & Se completa hasta el punto 12 inclusive                & {29} de {Julio} de 2025 \\ \hline
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
 %		  Así                                                    & {día} de {mes} de 202X \\ \hline
@@ -649,117 +651,293 @@ Preparación de presentación final (opcional) & Confección de video demostraci
 
 \section{10. Planificación de Sprints}
 
-Organizar las tareas técnicas del proyecto en sprints de trabajo que permitan distribuir de forma equilibrada la carga horaria total, estimada en 600 horas.
-
-\textbf{Consigna:}
-\begin{itemize}
-  \item Completar una tabla que relacione sprints con HU y tareas técnicas correspondientes.
-  \item Incluir estimación en horas para cada tarea.
-  \item Indicar responsable y porcentaje de avance estimado o completado.
-  \item Contemplar también tareas de planificación, documentación, redacción de memoria y preparación de defensa.
-\end{itemize}
-
-\textbf{Conceptos clave:}
-\begin{itemize}
-  \item Una \'{e}pica es una unidad funcional amplia; una historia de usuario es una funcionalidad concreta; un sprint es una unidad de tiempo donde se ejecutan tareas.
-  \item Las tareas son el nivel más desagregado: permiten estimar tiempos, asignar responsables y monitorear progreso.
-\end{itemize}
-
-\textbf{Duración sugerida:}
-\begin{itemize}
-  \item Para un proyecto de 600 h, se recomienda planificar entre 10 y 12 sprints de aproximadamente 2 semanas cada uno.
-  \item Asignar entre 45 y 50 horas efectivas por sprint a tareas técnicas.
-  \item Reservar 100 a 120 h para actividades no técnicas (planificación, escritura, reuniones, defensa).
-\end{itemize}
-
-\textbf{Importante:}
-\begin{itemize}
-  \item En proyectos individuales, el responsable suele ser el propio autor.
-  \item Aun así, desagregar tareas facilita el seguimiento y mejora continua.
-\end{itemize}
-
-\textbf{Conversión opcional de Story Points a horas:}
-\begin{itemize}
-  \item 1 SP \(\approx\) 2 h como referencia flexible.
-  \item Tener en cuenta aproximaciones tipo Fibonacci.
-\end{itemize}
-
-\begin{table}[htpb]
-\centering
-\caption{Formato sugerido}
-\begin{tabularx}{\linewidth}{@{}|l|l|X|c|l|c|@{}}
+%\begin{xltabular}{\textwidth}{|c|X|X|c|c|c|}
+\begin{xltabular}{\linewidth}{@{}|c|X|X|c|c|c|@{}}
 \hline
 \rowcolor[HTML]{C0C0C0}
-Sprint & HU o fase & Tarea & Horas / SP & Responsable & \% Completado \\ \hline
-Sprint 0 & Planificación & Definir alcance y cronograma & 10 h & Alumno & 100\% \\ \hline
-Sprint 0 & Planificación & Reunión con tutor/cliente & 5 h & Alumno & 50\% \\ \hline
-Sprint 0 & Planificación & Ajuste de entregables & 6 h & Alumno & 25\% \\ \hline
-Sprint 1 & HU1 & Tarea 1 HU1 & 6 h / 3 SP & Alumno & 0\% \\ \hline
-Sprint 1 & HU1 & Tarea 2 HU1 & 10 h / 5 SP & Alumno & 0\% \\ \hline
-Sprint 2 & HU2 & Tarea 1 HU2 & 7 h / 5 SP & Alumno & 0\% \\ \hline
-... & ... & ... & ... & ... & ... \\ \hline
-Sprint 5 & Escritura & Redacción memoria & 50 h / 34 SP & Alumno & 0\% \\ \hline
-Sprint 6 & Defensa & Preparación exposición & 20 h / 13 SP & Alumno & 0\% \\ \hline
-\end{tabularx}
-\end{table}
 
-\textbf{Recomendaciones:}
-\begin{itemize}
-  \item Verificar que la carga horaria por sprint sea equilibrada.
-  \item Usar sprints de 1 a 3 semanas, acordes al cronograma general.
-  \item Actualizar el \% completado durante el seguimiento del proyecto.
-  \item Considerar un sprint final exclusivo para pruebas, revisión y ajustes antes de la defensa.
-\end{itemize}
+\hline \rowcolor[HTML]{C0C0C0} \multicolumn{1}{|c|}{Sprint} & \multicolumn{1}{X|}{HU o fase} & \multicolumn{1}{X|}{Tarea} & \multicolumn{1}{c|}{Horas/SP} & \multicolumn{1}{c|}{Responsable} & \multicolumn{1}{c|}{\% Completado} \\ \hline 
+\endfirsthead
 
+\hline \rowcolor[HTML]{C0C0C0} \multicolumn{1}{|c|}{Sprint} & \multicolumn{1}{X|}{HU o fase} & \multicolumn{1}{X|}{Tarea} & \multicolumn{1}{c|}{Horas/SP} & \multicolumn{1}{c|}{Responsable} & \multicolumn{1}{c|}{\% Completado} \\ \hline 
+\endhead
+
+\endfoot
+
+\hline
+\endlastfoot
+Sprint 0 & Planificación del proyecto y confección de informes de avance & Planificación del proyecto & 8 h / 5 SP & Alumno & 80 \%\\ \hline
+Sprint 0 & Planificación del proyecto y confección de informes de avance & Informe de avance - Secciones 1 a 5 inclusive  & 6 h / 3 SP & Alumno & 100 \% \\ \hline
+Sprint 0 & Planificación del proyecto y confección de informes de avance & Informe de avance - Secciones 6 a 9 inclusive  & 5 h / 3 SP & Alumno & 100 \% \\ \hline
+Sprint 0 & Planificación del proyecto y confección de informes de avance & Informe de avance - Secciones 10 a 12 inclusive  & 4 h / 2 SP & Alumno & 100 \% \\ \hline
+Sprint 0 & Planificación del proyecto y confección de informes de avance & Informe de avance - Secciones 13 a 15 inclusive  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 0 & Planificación del proyecto y confección de informes de avance & Informe de avance - Correciones generales  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU1 - Análisis exploratorio  & Identificar variables \textit{categóricas} & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU1 - Análisis exploratorio  & Identificar variables \textit{numéricas} & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU1 - Análisis exploratorio  & Graficar la distribución de las variables \textit{numéricas} & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU1 - Análisis exploratorio  & Realizar análisis de correlaciones entre variables \textit{numéricas}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU1 - Análisis exploratorio  & Documentar pasos y decisiones tomadas  & 3 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Investigar técnicas de balanceo de clases para algoritmos de clasificación  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Implementar técnicas de balanceo de clases para algoritmos de clasificación  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Separar \textit{dataset} en \textit{train} y \textit{test}  & 3 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Identificar variables con datos faltantes  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Analizar causas de datos faltantes  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Corregir datos faltantes  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Identificar datos con valores atípicos  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU2 - Procesamiento de datos faltantes y datos atípicos & Analizar causas de datos atípicos  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU2 - Procesamiento de datos faltantes y datos atípicos & Graficar variables que presentan de datos atípicos  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 2 & HU2 - Procesamiento de datos faltantes y datos atípicos & Corregir datos atípicos  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU2 - Procesamiento de datos faltantes y datos atípicos & Documentar pasos y decisiones tomadas  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Identificar variables menos importantes para eliminarlas  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Implementar técnicas de eliminación de features  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Crear nuevas variables mediante combinaciones lineales de variables existentes  & 7 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Investigar otras técnicas de creación de variables & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Aplicar otras técnicas de creación de variables  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Evaluar nuevas variables en modelos  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 2 & HU3 - \textit{Feature Engineering}  & Documentar pasos y decisiones tomadas  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{Logistic Regression}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{SVM}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering}  & 4 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{XGBoost}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Persistir modelos en \textit{GitHub}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Documentar pasos y decisiones tomadas  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{Logistic Regression}  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{SVM}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{XGBoost}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, sin considerar \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, sin considerar \textit{feature engineering} & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, sin considerar \textit{feature engineering}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, considerando \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, considerando \textit{feature engineering}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, considerando \textit{feature engineering}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Documentar pasos y decisiones tomadas  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, considerando \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, considerando \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, sin  considerar \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, sin  considerar \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, considerando \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, considerando \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Comparar métricas de distintos modelos  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Documentar pasos y decisiones tomadas & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Investigar buenas prácticas para despliegues de \textit{MLFlow}  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Crear entorno local para despliegue \textit{MLFlow}  & 7 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de análisis de datos en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Ejecutar localmente el entorno \textit{MLFlow}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Validar ejecución local del entorno \textit{MLFlow}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Documentar pasos y decisiones tomadas \textit{MLFlow}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Investigar como exponer un entorno \textit{MLFlow} mediante \textit{API}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer resultados de modelos explorados en entorno \textit{MLFlow} mediante \textit{API}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer comparación de modelos en entorno \textit{MLFlow} mediante \textit{API}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Documentar pasos y decisiones tomadas  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU9 - Implementación de buenas prácticas  & Investigar buenas prácticas en código \textit{Python}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 9 & HU9 - Implementación de buenas prácticas  & Aplicar buenas prácticas en código \textit{Python}  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU10 - Documentación  & Asegurar que cada decisión tomada haya sido justificada y documentada  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU10 - Documentación  & Asegurar ortografía y formato en documentación  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a modelos explorados mediante \textit{API} de entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a comparación de modelos mediante \textit{API} de entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU11 - Validación de \textit{API} de \textit{MLFlow} & Crear documentación sobre el uso de \textit{API} de entorno \textit{MLFlow}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & Redacción de memoria  & Redacción de sección sobre \textit{procesamiento de datos}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & Redacción de memoria  & Redacción de sección sobre \textit{Feature Engineering}  & 3 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & Redacción de memoria  & Redacción de sección sobre \textit{implementación de modelos}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 10 & Redacción de memoria  & Redacción de sección sobre \textit{optimización de hiperparámetros}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 10 & Redacción de memoria  & Redacción de sección sobre \textit{MLFlow}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 10 & Redacción de memoria  & Correcciones generales  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 10 & Preparación de presentación final  & Confección de presentación \textit{PowerPoint}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 10 & Preparación de presentación final  & Confección de video demostración  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 10 & Ajustes finales & Realizar correcciones a código de análisis de datos & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 10 & Ajustes finales & Realizar correcciones a código de entrenamiento de modelos & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 10 & Ajustes finales & Realizar correcciones a código de evaluación de modelos & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 10 & Ajustes finales & Realizar pruebas finales & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 10 & Ajustes finales & Realizar ajustes en memoria final & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+\end{xltabular}
 
 \section{11. Diagrama de Gantt (sprints)}
 \label{sec:gantt}
 
-Visualizar en un diagrama de Gantt la planificación temporal del proyecto, tomando como base los sprints definidos en la sección anterior. Debe contemplar todas las horas del proyecto.
+%Visualizar en un diagrama de Gantt la planificación temporal del proyecto, tomando como base los sprints definidos en la sección anterior. Debe contemplar todas las horas del proyecto.
 
-Consigna:
+%Consigna:
 
-\begin{itemize}
+%\begin{itemize}
 
-\item Elaborar un diagrama de Gantt que muestre la secuencia temporal de los sprints.
+%\item Elaborar un diagrama de Gantt que muestre la secuencia temporal de los sprints.
 
-\item Cada fila debe representar un sprint (con su número o nombre), y el eje horizontal debe indicar el tiempo (en semanas o fechas concretas).
+%\item Cada fila debe representar un sprint (con su número o nombre), y el eje horizontal debe indicar el tiempo (en semanas o fechas concretas).
 
-\item Las tareas técnicas derivadas de HU deben diferenciarse visualmente (por ejemplo, con un color distinto) de las tareas no técnicas (planificación, redacción, defensa).
+%\item Las tareas técnicas derivadas de HU deben diferenciarse visualmente (por ejemplo, con un color distinto) de las tareas no técnicas (planificación, redacción, defensa).
 
-\item Incluir todas las tareas estimadas en cada sprint.
-\end{itemize}
+%\item Incluir todas las tareas estimadas en cada sprint.
+%\end{itemize}
 
-Recomendaciones para el Gantt:
+%Recomendaciones para el Gantt:
 
-\begin{itemize}
+%\begin{itemize}
 
-	\item Podés usar herramientas gratuitas como TeamGantt, ClickUp, GanttProject, [Google Sheets], [Trello + Planyway], entre otras.
-	\item Ordená los sprints de forma cronológica, comenzando con Sprint 0 (planificación) y finalizando con el sprint de defensa.
-	\item Asegurate de reflejar la duración realista de cada sprint según tu disponibilidad y el cronograma general del posgrado.
-	\item Incluí hitos importantes: reuniones, entregas parciales, defensa.
-\end{itemize}
-
-
-Incluir una imagen legible del diagrama de Gantt. Si es muy ancho, presentar primero la tabla y luego el gráfico de barras.
+%	\item Podés usar herramientas gratuitas como TeamGantt, ClickUp, GanttProject, [Google Sheets], [Trello + Planyway], entre otras.
+%	\item Ordená los sprints de forma cronológica, comenzando con Sprint 0 (planificación) y finalizando con el sprint de defensa.
+%	\item Asegurate de reflejar la duración realista de cada sprint según tu disponibilidad y el cronograma general del posgrado.
+%	\item Incluí hitos importantes: reuniones, entregas parciales, defensa.
+%\end{itemize}
 
 
+%Incluir una imagen legible del diagrama de Gantt. Si es muy ancho, presentar primero la tabla y luego el gráfico de barras.
+
+En el cuadro \ref{table:gantt-resumen} se muestra el resumen de los \textit{sprints} del diagrama Gantt.
+
+En el cuadro \ref{table:gantt-color} se especifíca qué referencia cada color utilizado en el diagrama Gantt.
+
+El diagrama Gantt se puede observar en las figuras \ref{fig:gantt1}, \ref{fig:gantt2}, \ref{fig:gantt3} y \ref{fig:gantt4}.
+
+\begin{table}[ht]
+\centering
+\begin{tabularx}{\linewidth}{@{}|l|l|X|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0}
+Sprint  & Cantidad de Horas & Fecha Inicio              & Fecha Fin \\ \hline
+0       & 32 h              & \fechaInicioName          & 4 de julio de 2025 \\ \hline
+1       & 58 h              & 7 de julio de 2025        & 25 de julio de 2025 \\ \hline
+2       & 60 h              & 28 de julio de 2025       & 15 de agosto de 2025 \\ \hline
+3       & 64 h              & 18 de agosto de 2025      & 5 de septiembre de 2025 \\ \hline
+4       & 62 h              & 8 de septiembre de 2025   & 26 de septiembre de 2025 \\ \hline
+5       & 60 h              & 29 de septiembre de 2025  & 17 de octubre de 2025 \\ \hline
+6       & 57 h              & 20 de octubre de 2025     & 7 de noviembre de 2025 \\ \hline
+7       & 60 h              & 10 de noviembre de 2025   & 28 de noviembre de 2025 \\ \hline
+8       & 58 h              & 1 de diciembre de 2025    & 19 de diciembre de 2025 \\ \hline
+9       & 60 h              & 2 de marzo de 2026        & 20 de marzo de 2026 \\ \hline
+10      & 59 h              & 23 de marzo de 2026       & 10 de abril de 2026 \\ \hline
+\end{tabularx}
+\caption{Resumen de sprints del diagrama Gantt.}
+\label{table:gantt-resumen}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{}|c|c|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0}
+Color   & Descripción \\ \hline
+Azul    & Sprint \\ \hline
+Violeta    & Tarea técnica \\ \hline
+Verde    & Tarea no técnica \\ \hline
+Amarillo    & Hito \\ \hline
+\end{tabular}
+\caption{Referencias de colores utilizados en el diagrama Gantt.}
+\label{table:gantt-color}
+\end{table}
+
+%\begin{table}[htpb]
+%\centering
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%\rowcolor[HTML]{C0C0C0}
+%Criterio\textbackslash Ponderación & Baja & Media & Alta \\ \hline
+%Dificultad & 1 & 3 & 5 \\ \hline
+%Complejidad & 1 & 3 & 5 \\ \hline
+%Incertidumbre & 1 & 5 & 8 \\ \hline
+%\end{tabular}
+%\caption{Tabla de ponderaciones de historia de usuario.}
+%\label{table:ponderaciones}
+%\end{table}
+
+\pagebreak
+
+\begin{landscape}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.2\textwidth]{./Figuras/Gantt-1.png}
+\caption{Diagrama de Gantt - Sprints 0, 1 y 2}
+\label{fig:gantt1}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.5\textwidth]{./Figuras/Gantt-2.png}
+\caption{Diagrama de Gantt - Sprints 3, 4 y 5}
+\label{fig:gantt2}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.5\textwidth]{./Figuras/Gantt-3.png}
+\caption{Diagrama de Gantt - Sprints 6, 7 y 8}
+\label{fig:gantt3}
+\end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[htpb]
+\centering 
+\includegraphics[width=1.5\textwidth]{./Figuras/Gantt-4.png}
+\caption{Diagrama de Gantt - Sprints 9 y 10}
+\label{fig:gantt4}
+\end{figure}
+\end{landscape}
 
 \section{12. Normativa y cumplimiento de datos (gobernanza)}
 
-En esta sección se debe analizar si los datos utilizados en el proyecto están sujetos a normativas de protección de datos y privacidad, y en qué condiciones se pueden emplear.
+%En esta sección se debe analizar si los datos utilizados en el proyecto están sujetos a normativas de protección de datos y privacidad, y en qué condiciones se pueden emplear.
 
-\textbf{Aspectos a considerar:}
+%\textbf{Aspectos a considerar:}
+%\begin{itemize}
+%  \item Evaluar si los datos están regulados por normativas como GDPR, Ley 25.326 de Protección de Datos Personales en Argentina, HIPAA u otras según jurisdicción y temática.
+%  \item Determinar si el uso de los datos requiere consentimiento explícito de los usuarios involucrados.
+%  \item Indicar si existen restricciones legales, técnicas o contractuales sobre el uso, compartición o publicación de los datos.
+%  \item Aclarar si los datos provienen de fuentes licenciadas, de acceso público o bajo algún tipo de autorización especial.
+%  \item Analizar la viabilidad del proyecto desde el punto de vista legal y ético, considerando la gobernanza de los datos.
+%\end{itemize}
+
+%Este análisis es clave para garantizar el cumplimiento normativo y evitar conflictos legales durante el desarrollo y publicación del proyecto.
+
+El proyecto utilizará el \textit{dataset} de \href{https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction}{\textit{Taiwanese Bankruptcy Prediction}}.
+
+El \textit{dataset} está publicado bajo la licencia \href{https://creativecommons.org/licenses/by/4.0/legalcode}{\textit{Creative Commons Attribution 4.0 International}}, la cual permite la copia, distribución, exhibición y ejecución de los datos siempre y cuando se dé crédito al autor y/o publicador, siendo en este caso el \href{https://archive.ics.uci.edu/}{repositorio de \textit{Machine Learning} de \textit{UC Irvine}}.
+
+La información que presenta el \textit{dataset} fue recolectada y publicada por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}. Tal como se menciona en la sección de \href{https://www.tejwin.com/en/solution/financial-data/}{\textit{financial data}} de su sitio web, todos los datos financieros que ellos presentan se obtienen de:
 \begin{itemize}
-  \item Evaluar si los datos están regulados por normativas como GDPR, Ley 25.326 de Protección de Datos Personales en Argentina, HIPAA u otras según jurisdicción y temática.
-  \item Determinar si el uso de los datos requiere consentimiento explícito de los usuarios involucrados.
-  \item Indicar si existen restricciones legales, técnicas o contractuales sobre el uso, compartición o publicación de los datos.
-  \item Aclarar si los datos provienen de fuentes licenciadas, de acceso público o bajo algún tipo de autorización especial.
-  \item Analizar la viabilidad del proyecto desde el punto de vista legal y ético, considerando la gobernanza de los datos.
+    \item Informes auditados por contadores públicos certificados.
+    \item Datos mensuales sobre ingresos proporcionados por empresas que cotizan en la bolsa de Taiwán
 \end{itemize}
 
-Este análisis es clave para garantizar el cumplimiento normativo y evitar conflictos legales durante el desarrollo y publicación del proyecto.
+Como dato adicional, en el \textit{dataset} no se mencionan los nombres de las empresas ni datos similares, solo presenta información financiera.
 
+Por todo lo mencionado anteriormente podemos garantizar que no hay inconvenientes al utilizar el \textit{dataset} de \href{https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction}{\textit{Taiwanese Bankruptcy Prediction}} durante el desarrollo y publicación del proyecto. Solamente hay que dar crédito a su publicador (\href{https://archive.ics.uci.edu/}{repositorio de \textit{Machine Learning} de \textit{UC Irvine}}).
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
