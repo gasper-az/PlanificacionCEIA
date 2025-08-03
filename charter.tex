@@ -34,6 +34,7 @@
 \usepackage{hyperref}
 \usepackage{xltabular}
 \usepackage{pdflscape}
+\usepackage{multirow}
 
 \begin{document}
 
@@ -942,31 +943,34 @@ Por todo lo mencionado anteriormente podemos garantizar que no hay inconveniente
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
+Riesgo 1: datos no fiables.
 \begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
+	\item Severidad (7): este riesgo es de severidad alta ya que si los datos no son fiables, los resultados obtenidos serán de mala calidad.
+	\item Probabilidad de ocurrencia (2): se considera que la propobabilidad de ocurrencia es baja, ya que se hizo un relevamiento sobre otros proyectos que utilizan estos datos, y los mismos presentan resultados con buena calidad.
 \end{itemize}   
 
-Riesgo 2:
+Riesgo 2: falla o ruptura del equipo de trabajo (laptop).
 \begin{itemize}
-	\item Severidad (S): X.\\
-	Justificación...
-	\item Ocurrencia (O): Y.\\
-	Justificación...
+	\item Severidad (10): este riesgo es de severidad alta ya que si el equipo con el cual se realiza el proyecto sufre una falla o una ruptura, tanto el código como los tiempos del mismo tamién se verán afectados.
+	\item Probabilidad de ocurrencia (5): se considera que la propobabilidad de ocurrencia es media, ya que hasta el momento de realizar la planificación el equipo no sufrió inconvenientes, pero eso no implica que no pueda haberlos en un futuro.
+\end{itemize}   
+
+Riesgo 3: los modelos explorados no son suficientes para explicar el problema.
+\begin{itemize}
+	\item Severidad (6): se considera como un riesgo de severidad media, ya que si ocurre sería necesario explorar otros modelos, lo cual afectaría los tiempos del proyecto.
+	\item Ocurrencia (2): se considera una probabilidad de ocurrencia baja, ya que en general, los modelos que se utilizarán (\textit{SVM}, \textit{Logistic Regression} y \textit{XGBoost}) suelen tener buenos resultados en análisis similares.
 \end{itemize}
 
-Riesgo 3:
+Riesgo 4: falta de experiencia en uso de \textit{MLOps}.
 \begin{itemize}
-	\item Severidad (S):  X.\\
-	Justificación...
-	\item Ocurrencia (O): Y.\\
-	Justificación...
+	\item Severidad (8): es un riesgo alto ya que al no tener experiencia de trabajo con dicha herramienta, su estimación podría ser errónea, lo cual implicaría modificar los tiempos necesarios para desarrollarla.
+	\item Ocurrencia (7): ya que al momento de realizar la planificación se cuenta con poca experiencia de trabajo con \textit{MLOps}. 
+\end{itemize}
+
+Riesgo 5: se requiere utilizar computación en la nube para trabajar con \textit{MLOps}.
+\begin{itemize}
+	\item Severidad (6): es un riesgo medio ya que implicaría un costo adicional en el desarrollo del proyecto.
+	\item Ocurrencia (3): al momento de realizar la planificación, se hizo un breve análisis sobre esta herramienta, y en el mismo se relevó que no es necesario el uso de computación en la nube para implementar \textit{MLOps}. 
 \end{itemize}
 
 
@@ -978,99 +982,123 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+Datos no fiables       &  7  &  2  &  14   & - & - & - \\ \hline
+Falla o ruptura del equipo de trabajo (laptop) & 10 & 5 &  50   & 5* & 5* & 25* \\ \hline
+Los modelos explorados no son suficientes para explicar el problema & 6 & 2 & 12 & - & - & - \\ \hline
+Falta de experiencia en uso de \textit{MLOps} & 8 &  7  &  56   &  4*  & 5* & 20* \\ \hline
+Se requiere utilizar computación en la nube para trabajar con \textit{MLOps}       & 6 & 3  & 18 & - & - & - \\ \hline
 \end{tabularx}%
 \end{table}
 
 Criterio adoptado: 
 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 20.
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  \begin{itemize}
-	\item Severidad (S*): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O*): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
-	\end{itemize}
+Riesgo 2 (falla o ruptura del equipo de trabajo):
+el plan de mitigación de este riesgo consiste en buscar alternativas para el desarrollo del proyecto, como así también para el almacenamiento del código fuente. Se utilizará \textit{GitHub} para almacenar el código, el cual será subido frecuentemente para evitar pérdidas (mínimo, una vez por semana). Como alternativa de desarrollo, se utilizará \textit{Google Colab}, el cual permitirá ejecutar el código en la nube mientras se repara el equipo original o se busca uno nuevo.
+\begin{itemize}
+	\item Severidad (4*): el impacto será menor que el original. Si ocurriese, solamente se tendrá que adaptar al uso de \textit{Google Colab} mientras se busca un equipo alternativo.
+	\item Probabilidad de ocurrencia (5*): la probabilidad que ocurra seguirá siendo la misma.
+\end{itemize}
 
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
+Riesgo 4 (Falta de experiencia en uso de \textit{MLOps}):
+para mitigar este riesgo se buscarán ejemplos prácticos de implementación de \textit{MLOps} en ambientes locales durante las etapas tempranas del proyecto. Se hará énfasis en que dicho ejemplos tengan buenas prácticas de codificación y de despliegue. Si bien esto no satisface la falta de experiencia, por lo menos se tendrán ejemplos útiles en los cuales basarse al momento de trabajar con \textit{MLOps}.
+\begin{itemize}
+    \item Severidad (5*): al tener ejemplos prácticos útiles en los cuales basarse, el impacto de este riesgo se verá disminuído.
+    \item Probabilidad de ocurrencia (5*): al buscar ejemplos prácticos útiles desde etapas tempranas, se puede disminuir la probabilidad de ocurrencia.
+\end{itemize}
  
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-
-\end{consigna}
-
 \section{14. Sprint Review}
 \label{sec:sprint_review}
 
-La revisión de sprint (\emph{Sprint Review}) es una práctica fundamental en metodologías ágiles. Consiste en revisar y evaluar lo que se ha completado al finalizar un sprint. En esta instancia, se presentan los avances y se verifica si las funcionalidades cumplen con los criterios de aceptación establecidos. También se identifican entregables parciales y se consideran ajustes si es necesario.
+%La revisión de sprint (\emph{Sprint Review}) es una práctica fundamental en metodologías ágiles. Consiste en revisar y evaluar lo que se ha completado al finalizar un sprint. En esta instancia, se presentan los avances y se verifica si las funcionalidades cumplen con los criterios de aceptación establecidos. También se identifican entregables parciales y se consideran ajustes si es necesario.
 
-Aunque el proyecto aún se encuentre en etapa de planificación, esta sección permite proyectar cómo se evaluarán las funcionalidades más importantes del backlog. Esta mirada anticipada favorece la planificación enfocada en valor y permite reflexionar sobre posibles obstáculos.
+%Aunque el proyecto aún se encuentre en etapa de planificación, esta sección permite proyectar cómo se evaluarán las funcionalidades más importantes del backlog. Esta mirada anticipada favorece la planificación enfocada en valor y permite reflexionar sobre posibles obstáculos.
 
-\textbf{Objetivo:} anticipar cómo se evaluará el avance del proyecto a medida que se desarrollen las funcionalidades, utilizando como base al menos cuatro historias de usuario del \emph{Product Backlog}.
+%\textbf{Objetivo:} anticipar cómo se evaluará el avance del proyecto a medida que se desarrollen las funcionalidades, utilizando como base al menos cuatro historias de usuario del \emph{Product Backlog}.
 
-
-Seleccionar al menos 4 HU del Product Backlog. Para cada una, completar la siguiente tabla de revisión proyectada:
-
-\textbf{Formato sugerido:}
-\begin{table}[htpb]
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|>{\raggedright\arraybackslash}m{2.5cm}|
-                >{\raggedright\arraybackslash}m{2.3cm}|
-                >{\raggedright\arraybackslash}m{3cm}|
-                >{\raggedright\arraybackslash}m{3cm}|
-                >{\raggedright\arraybackslash}m{3cm}|}
+%\begin{table}[htpb]
+%\renewcommand{\arraystretch}{1.5}
+%\begin{tabular}{|>{\raggedright\arraybackslash}m{2.5cm}|
+%                >{\raggedright\arraybackslash}m{2.3cm}|
+%                >{\raggedright\arraybackslash}m{3cm}|
+%                >{\raggedright\arraybackslash}m{3cm}|
+%                >{\raggedright\arraybackslash}m{3cm}|}
+%\hline
+\begin{xltabular}{\linewidth}{@{}|X|X|X|X|X|@{}}
 \hline
 \rowcolor[HTML]{CCCCCC}
-\textbf{HU seleccionada} & \textbf{Tareas asociadas} & \textbf{Entregable esperado} & \textbf{¿Cómo sabrás que está cumplida?} & \textbf{Observaciones o riesgos} \\
+\textbf{HU seleccionada} & \textbf{Tareas asociadas} & \textbf{Entregable esperado} & \textbf{¿Cómo sabrás que está cumplida?} & \textbf{Observaciones o riesgos} \\ \hline
+\endfirsthead
+
 \hline
-                         & Tarea 1 &                             &                                           &                                     \\ \cline{2-2}
-\multirow{-2}{=}{HU1}    & Tarea 2 & \multirow{-2}{=}{Módulo funcional} & \multirow{-2}{=}{Cumple criterios de aceptación definidos} & \multirow{-2}{=}{Falta validar con el tutor} \\
-\hline
-                         & Tarea 1 &                             &                                           &                                     \\ \cline{2-2}
-\multirow{-2}{=}{HU3}    & Tarea 2 & \multirow{-2}{=}{Reporte generado} & \multirow{-2}{=}{Exportación disponible y clara} & \multirow{-2}{=}{Requiere datos reales} \\
-\hline
-                         & Tarea 1 &                             &                                           &                                     \\ \cline{2-2}
-\multirow{-2}{=}{HU5}    & Tarea 2 & \multirow{-2}{=}{Panel de gestión} & \multirow{-2}{=}{Roles diferenciados operativos} & \multirow{-2}{=}{Riesgo en integración} \\
-\hline
-                         & Tarea 1 &                             &                                           &                                     \\ \cline{2-2}
-\multirow{-2}{=}{HU7}    & Tarea 2 & \multirow{-2}{=}{Informe trimestral} & \multirow{-2}{=}{PDF con gráficos y evolución} & \multirow{-2}{=}{Puede faltar tiempo para ajustes} \\
-\hline
-\end{tabular}
-\end{table}
+\rowcolor[HTML]{CCCCCC}
+\textbf{HU seleccionada} & \textbf{Tareas asociadas} & \textbf{Entregable esperado} & \textbf{¿Cómo sabrás que está cumplida?} & \textbf{Observaciones o riesgos} \\ \hline
+\endhead
+
+%=======================================================================================================================================%
+    & Graficar la distribución de las variables & & & \\ \cline{2-2}
+\multirow{-2}{=}[2em]{HU1 - Análisis exploratorio}
+    & Realizar análisis de correlaciones entre variables
+    & \multirow{-2}{=}[2em]{Gráficos de distribución de variables + Documentación pertinente}
+    & \multirow{-2}{=}[2em]{Cumple criterios de aceptación definidos}
+    & \multirow{-2}{=}[2em]{-} \\ \hline
+%=======================================================================================================================================%
+    & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & & & \\ \cline{2-2}
+\multirow{-2}{=}[5em]{HU4 - Implementación de modelos de \textit{Machine Learning}}
+    & Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering}
+    & \multirow{-2}{=}[5em]{Implementación de modelo \textit{XGBoost}, con y sin \textit{feature engineering}}
+    & \multirow{-2}{=}[5em]{Modelo \textit{XGBoost} realiza predicciones sobre dataset de \textit{test}}
+    & \multirow{-2}{=}[5em]{Dependencia con resultados de HU1 - Análisis exploratorio y HU3 - \textit{Feature Engineering}} \\ \hline
+%=======================================================================================================================================%
+\pagebreak
+    & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering} & & & \\ \cline{2-2}
+    & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar & & & \\ \cline{2-2}
+    & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering} & & & \\ \cline{2-2}
+\multirow{-4}{=}[8em]{HU6 - Métricas de modelos}
+    & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar
+    & \multirow{-4}{=}[8em]{Métricas para \textit{XGBoost}, con y son \textit{feature engineering}}
+    & \multirow{-4}{=}[8em]{Valores numéricas para \textit{F1-score} y \textit{AUC-ROC} + gráfico de \textit{AUC-ROC}}
+    & \multirow{-4}{=}[8em]{Dependencia con resultados de HU4 - Implementación de modelos de \textit{Machine Learning}} \\ \hline
+%=======================================================================================================================================%
+    & Replicar técnicas de análisis de datos en entorno \textit{MLFlow} & & & \\ \cline{2-2}
+    & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow} & & & \\ \cline{2-2}
+\multirow{-3}{=}[3em]{HU7 - Despliegue en \textit{MLFlow}}
+    & Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow}
+    & \multirow{-3}{=}[3em]{Entorno \textit{MLFlow} desplegado localmente}
+    & \multirow{-3}{=}[3em]{Se puede acceder al entorno \textit{MLFlow} de manera local}
+    & \multirow{-3}{=}[8em]{Dependencia con resultados de HU1 - Análisis exploratorio, HU3 - \textit{Feature Engineering} y HU4 - Implementación de modelos de \textit{Machine Learning}} \\ \hline
+\end{xltabular}
+%\end{tabular}
+%\end{table}
 
 \section{15. Sprint Retrospective}    
 \label{sec:sprint_retro}
 
-La retrospectiva de sprint es una práctica orientada a la mejora continua. Al finalizar un sprint, el equipo (o el alumno, si trabaja de forma individual) reflexiona sobre lo que funcionó bien, lo que puede mejorarse y qué acciones concretas pueden implementarse para trabajar mejor en el futuro.
+%La retrospectiva de sprint es una práctica orientada a la mejora continua. Al finalizar un sprint, el equipo (o el alumno, si trabaja de forma individual) reflexiona sobre lo que funcionó bien, lo que puede mejorarse y qué acciones concretas pueden implementarse para trabajar mejor en el futuro.
 
-Durante la cursada se propuso el uso de la \textbf{Estrella de la Retrospectiva}, que organiza la reflexión en torno a cinco ejes:
+%Durante la cursada se propuso el uso de la \textbf{Estrella de la Retrospectiva}, que organiza la reflexión en torno a cinco ejes:
 
-\begin{itemize}
-\item  ¿Qué hacer más?
-\item  ¿Qué hacer menos?
-\item  ¿Qué mantener?
-\item  ¿Qué empezar a hacer?
-\item  ¿Qué dejar de hacer?
-\end{itemize}
+%\begin{itemize}
+%\item  ¿Qué hacer más?
+%\item  ¿Qué hacer menos?
+%\item  ¿Qué mantener?
+%\item  ¿Qué empezar a hacer?
+%\item  ¿Qué dejar de hacer?
+%\end{itemize}
 
-Aun en una etapa temprana, esta herramienta permite que el alumno planifique su forma de trabajar, identifique anticipadamente posibles dificultades y diseñe estrategias de organización personal.
+%Aun en una etapa temprana, esta herramienta permite que el alumno planifique su forma de trabajar, identifique anticipadamente posibles dificultades y diseñe estrategias de organización personal.
 
-\textbf{Objetivo:} reflexionar sobre las condiciones iniciales del proyecto, identificando fortalezas, posibles dificultades y estrategias de mejora, incluso antes del inicio del desarrollo.
+%\textbf{Objetivo:} reflexionar sobre las condiciones iniciales del proyecto, identificando fortalezas, posibles dificultades y estrategias de mejora, incluso antes del inicio del desarrollo.
 
 
-Completar la siguiente tabla tomando como referencia los cinco ejes de la Estrella de la Retrospectiva (\emph{Starfish} o estrella de mar). Esta instancia te ayudará a definir buenas prácticas desde el inicio y prepararte para enfrentar el trabajo de forma organizada y flexible. Se deberá completar la tabla al menos para 3 sprints técnicos y 1 no técnico.
+%Completar la siguiente tabla tomando como referencia los cinco ejes de la Estrella de la Retrospectiva (\emph{Starfish} o estrella de mar). Esta instancia te ayudará a definir buenas prácticas desde el inicio y prepararte para enfrentar el trabajo de forma organizada y flexible. Se deberá completar la tabla al menos para 3 sprints técnicos y 1 no técnico.
 
-\textbf{Formato sugerido:}
+%\textbf{Formato sugerido:}
 
 \begin{table}[htpb]
 \renewcommand{\arraystretch}{1.4}
@@ -1084,14 +1112,13 @@ Completar la siguiente tabla tomando como referencia los cinco ejes de la Estrel
 \rowcolor[HTML]{CCCCCC} 
 \textbf{Sprint tipo y N°} & \textbf{¿Qué hacer más?} & \textbf{¿Qué hacer menos?} & \textbf{¿Qué mantener?} & \textbf{¿Qué empezar a hacer?} & \textbf{¿Qué dejar de hacer?} \\
 \hline
-Sprint técnico - 1 & Validaciones continuas con el alumno & Cambios sin versión registrada & Pruebas con datos simulados & Documentar cambios propuestos & Ajustes sin análisis de impacto \\
-\hline
-Sprint técnico - 2 & Verificar configuraciones en múltiples escenarios & Modificar parámetros sin guardar historial & Perfiles reutilizables & Usar logs para configuración & Repetir pruebas manuales innecesarias \\
-\hline
-Sprint técnico - 8 & Comparar correlaciones con casos previos & Cambiar parámetros sin justificar & Revisión cruzada de métricas & Anotar configuraciones usadas & Trabajar sin respaldo de datos \\
-\hline
-Sprint no técnico - 12 (por ej.: ``Defensa'') & Ensayos orales con feedback & Cambiar contenidos en la memoria & Material visual claro & Dividir la presentación por bloques & Agregar gráficos difíciles de explicar \\
-\hline
+%========================================================================================================================================%
+Sprint técnico - 3 & Implementar modelos de \textit{Machine Learning} & Optimización de hiperparámetros & Buenas prácticas de código y documentación de decisiones tomadas & Identificar hiperparámetros para optimizar en futuros sprints técnicos & Correción de datos atípicos e implementación de \textit{feature engineering}. \\ \hline
+Sprint técnico - 6 & Obtener métricas \textit{f1-score} y \textit{AUC-ROC} para \textit{SVM} y \textit{Logistic Regression} & Explorar distintos modelos con y sin \textit{feature engineering} & Buenas prácticas de código y guardado de modelos en \textit{GitHub} & Gráficos para comparar métricas entre modelos & Identificar y optimizar hiperparámetros. \\ \hline
+Sprint técnico - 7 & Replicar etapas de análisis de datos en entorno \textit{MLFlow} & Comparación de modelos mediante métricas y gráficos & Persistir código en \textit{GitHub} y documentar decisiones tomadas & Prepar entorno \textit{MLFlow} para implementar modelos y sus comparaciones & Identificar, explorar y optimizar hiperparámetros de modelos. \\ \hline
+Sprint técnico - 8 & Replicar implementación de modelos en entorno \textit{MLFlow} & Replicar técnicas de Análisis de datos en entorno \textit{MLFlow} & Persistir código en \textit{GitHub} y documentar decisiones tomadas & Preparar entorno de \textit{MLFlow} para pruebas de \textit{APIs} necesarias & Identificar, explorar y optimizar hiperparámetros de modelos. \\ \hline
+Sprint no técnico - 10 & Confeccionar presentaciones para defensa final & Modificar contenido de memoria técnica & Pruebas para validar al entorno \textit{MLFlow} & Ensayos orales para la defensa & Modificar el código fuente. \\ \hline
+%========================================================================================================================================%
 \end{tabular}
 \end{table}
 
