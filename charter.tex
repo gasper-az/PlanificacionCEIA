@@ -4,7 +4,7 @@
 ]{charter} 
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Predicción de quiebra de empresas mediante técnicas de Machine Learning} 
+\titulo{Predicción de quiebra de empresas mediante técnicas de machine learning} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 %\posgrado{Carrera de Especialización en Sistemas Embebidos} 
@@ -90,7 +90,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en {el desarrollo de una herramienta basada en Machine Learning que permitirá predecir si una empresa puede entrar en quiebra o no}. El trabajo tendrá un presupuesto preliminar estimado de {604} horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en {el desarrollo de una herramienta basada en machine learning que permitirá predecir si una empresa puede entrar en quiebra o no}. El trabajo tendrá un presupuesto preliminar estimado de {604} horas y un costo estimado de \textcolor{red}{\$ XXX}, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -112,9 +112,9 @@ Se adjunta a esta acta la planificación inicial.
 %\begin{consigna}{red} % ELIMINAR \begin{consigna}{red} y \end{consigna}{red} en las secciones que vayan completando para cada entrega parcial.
 Este proyecto consiste en un emprendimiento personal cuyo objetivo es utilizar técnicas de aprendizaje de máquina para detectar si una empresa puede entrar en quiebra o no. Este tipo de análisis puede resultar de gran interés y utilidad para distintos actores del mercado financiero, tales como bancos, compañías aseguradoras, fondos de inversión o consultoras especializadas en riesgo crediticio. Por ello, estos se considerarán como potenciales clientes.
 
-Para llevarlo a cabo, se utilizará un \textit{dataset} publicado por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}, que contiene información financiera de empresas del mercado de Taiwán entre los años 1999 y 2009. Al ser estos datos públicos, hoy en día existen soluciones que exploran esta temática. Algunas de ellas hacen uso de modelos de \textit{machine learning} tales como \textit{SVM} y \textit{XGBoost}, junto con algunas técnicas de preprocesamiento de datos como \textit{Smote} y de búsqueda de hiperparámetros como \textit{Random Search}.
+Para llevarlo a cabo, se utilizará un dataset publicado por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}, que contiene información financiera de empresas del mercado de Taiwán entre los años 1999 y 2009. Al ser estos datos públicos, hoy en día existen soluciones que exploran esta temática. Algunas de ellas hacen uso de modelos de \textit{machine learning} tales como \textit{SVM} y \textit{XGBoost}, junto con algunas técnicas de preprocesamiento de datos como \textit{Smote} y de búsqueda de hiperparámetros como \textit{Random Search}.
 
-Con el fin de diferenciarse de estas soluciones, se propone implementar el marco de trabajo basado en \textit{MLFlow} definido en la figura \ref{fig:diagBloques}. Se detalla una serie de etapas cuyas salidas se refinarán durante distintas iteraciones. Esto permitirá a los usuarios finales trabajar en un entorno seguro, robusto, y reproducible.
+Con el fin de diferenciarse de estas soluciones, se propone implementar el marco de trabajo basado en MLFlow definido en la figura \ref{fig:diagBloques}. Se detalla una serie de etapas cuyas salidas se refinarán durante distintas iteraciones. Esto permitirá a los usuarios finales trabajar en un entorno seguro, robusto, y reproducible.
 
 El proyecto se encuentra en la etapa de planificación. El desarrollo e implementación se realizará en distintas etapas. Se comenzará con un análisis exploratorio de datos, que nos permitirá conocer mejor al dataset en cuestión. Luego, se realizarán iteraciones sobre las siguientes etapas:
 
@@ -169,11 +169,11 @@ Predecir si una empresa puede entrar en quiebra o no, al explorar técnicas de \
 
 El alcance del proyecto incluye:
 \begin{itemize}
-	\item Análisis exploratorio de datos: se analizarán las distintas variables presentes en el \textit{dataset} de estudio, con el fin de conocer sus características y poder tomar decisiones con base en ellas.
+	\item Análisis exploratorio de datos: se analizarán las distintas variables presentes en el dataset de estudio, con el fin de conocer sus características y poder tomar decisiones con base en ellas.
     \item Preprocesamiento de datos: se realizarán técnicas de tratamiento de datos faltantes, selección y/o extracción de variables, como así también de ingeniería de features.
-    \item Implementación de modelos de \textit{machine learning}: se estudiarán diversos modelos de aprendizaje de máquina sobre los datos procesados, tales como \textit{logistic regression}, \textit{SVM} y \textit{XGBoost}. Además, se optimizarán los hiperparámetros de estos modelos mediante búsqueda bayesiana.
+    \item Implementación de modelos de machine learning: se estudiarán diversos modelos de aprendizaje de máquina sobre los datos procesados, tales como \textit{logistic regression}, \textit{SVM} y \textit{XGBoost}. Además, se optimizarán los hiperparámetros de estos modelos mediante búsqueda bayesiana.
     \item Evaluación y comparación de modelos: se obtendrán métricas relacionadas a los modelos explorados, con el fin de poder determinar cuál de ellos realiza una mejor predicción.
-    \item Implementación de un entorno basado en \textit{MLFlow}: este entornó facilitará la realización, la reproducibilidad y la escalabilidad de las distintas etapas de trabajo que se realizarán en este proyecto. Este será de caracter local, es decir, no se implementará en una plataforma de \textit{cloud computing}.
+    \item Implementación de un entorno basado en MLFlow: este entornó facilitará la realización, la reproducibilidad y la escalabilidad de las distintas etapas de trabajo que se realizarán en este proyecto. Este será de caracter local, es decir, no se implementará en una plataforma de \textit{cloud computing}.
 \end{itemize}
 
 No se incluye:
@@ -187,10 +187,10 @@ No se incluye:
 
 Para el desarrollo del presente proyecto se supone que:
 \begin{itemize}
-	\item Supuesto 1: el \textit{dataset} de estudio presenta datos fiables, y no tiene restricciones en cuanto a licencias de uso.
-	\item Supuesto 2: una \textit{laptop} como equipo de trabajo es más que suficiente para realizar el preprocesamiento y entrenamiento de los modelos de aprendizaje automático.
-	\item Supuesto 3: el entorno de \textit{MLFlow} podrá desarrollarse en etapas futuras del proyecto, posteriores a la exploración de los modelos de aprendizaje automático.
-    \item Supuesto 4: el entorno de \textit{MLFlow} podrá desplegarse de manera local, sin necesidad de recurrir a plataforma de \textit{cloud computing}, tales como \textit{Azure}, \textit{AWS}, entre otros.
+	\item Supuesto 1: el dataset de estudio presenta datos fiables, y no tiene restricciones en cuanto a licencias de uso.
+	\item Supuesto 2: una laptop como equipo de trabajo es más que suficiente para realizar el preprocesamiento y entrenamiento de los modelos de aprendizaje automático.
+	\item Supuesto 3: el entorno de MLFlow podrá desarrollarse en etapas futuras del proyecto, posteriores a la exploración de los modelos de aprendizaje automático.
+    \item Supuesto 4: el entorno de MLFlow podrá desplegarse de manera local, sin necesidad de recurrir a plataforma de \textit{cloud computing}, tales como \textit{Azure}, \textit{AWS}, entre otros.
     \item Supuesto 5: se disponen de al menos 15 horas semanales para realizar el proyecto.
 \end{itemize}
 
@@ -198,8 +198,8 @@ Para el desarrollo del presente proyecto se supone que:
 \label{sec:backlog}
 \textbf{Roles}
 \begin{itemize}
-    \item \textit{Ingeniero del proyecto}: es quien se encarga del análisis, diseño, desarrollo y despliegue del proyecto.
-    \item \textit{Usuario final}: es quien consulta y analiza las predicciones de los modelos explorados en el proyecto.
+    \item Ingeniero del proyecto: es quien se encarga del análisis, diseño, desarrollo y despliegue del proyecto.
+    \item Usuario final: es quien consulta y analiza las predicciones de los modelos explorados en el proyecto.
 \end{itemize}
 
 \textbf{Criterios de ponderación de historias de usuario}
@@ -211,7 +211,7 @@ Esto son los criterios que se utilizan para ponderar a las historias de usuario 
     \item Incertidumbre: representa el riesgo asociado a la historia de usuario.
 \end{itemize}
 
-Cada criterio tiene asociado las ponderaciones \textit{baja}, \textit{media} y \textit{alta}, que se detallan en el cuadro \ref{table:ponderaciones}. Los \textit{Story Points} de una historia de usuario quedan definidos por la suma de los valores de estas ponderaciones redondeada hacia el número superior más próximo en la serie de \textit{Fibonacci}.
+Cada criterio tiene asociado las ponderaciones baja, media y alta, que se detallan en el cuadro \ref{table:ponderaciones}. Los \textit{Story Points} de una historia de usuario quedan definidos por la suma de los valores de estas ponderaciones redondeada hacia el número superior más próximo en la serie de \textit{Fibonacci}.
 
 \begin{table}[htpb]
 \centering
@@ -271,9 +271,9 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
     \end{itemize}
   \item \textbf{\'{E}pica 2 - Implementación y comparación de modelos}
     \begin{itemize}
-      \item HU4 - Implementación de modelos de \textit{Machine Learning}
+      \item HU4 - Implementación de modelos de \textit{machine learning}
         \begin{itemize}
-            \item Como ingeniero del proyecto, quiero implementar los modelos de \textit{Machine Learning} de \textit{Logistic Regression}, \textit{SVM} y \textit{XGBoost} que permitan predecir si una empresa entra en quiebra o no.
+            \item Como ingeniero del proyecto, quiero implementar los modelos de \textit{machine learning} de \textit{Logistic Regression}, \textit{SVM} y \textit{XGBoost} que permitan predecir si una empresa entra en quiebra o no.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: media - 3 \textit{Story Points}
@@ -285,7 +285,7 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
         \end{itemize}
       \item HU5 - Optimización de hiperparámetros
         \begin{itemize}
-            \item Como ingeniero del proyecto, quiero implementar técnicas de optimización de hiperparámetros y aplicarlas a los modelos de \textit{Machine Learning} implementados.
+            \item Como ingeniero del proyecto, quiero implementar técnicas de optimización de hiperparámetros y aplicarlas a los modelos de \textit{machine learning} implementados.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: media - 3 \textit{Story Points}
@@ -297,7 +297,7 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
         \end{itemize}
       \item HU6 - Métricas de modelos
         \begin{itemize}
-            \item Como ingeniero del proyecto, quiero calcular las métricas de \textit{AUC-ROC} y \textit{F1-score} en cada modelo de \textit{Machine Learning} implementado y comparar sus resultados.
+            \item Como ingeniero del proyecto, quiero calcular las métricas de \textit{AUC-ROC} y \textit{F1-score} en cada modelo de \textit{machine learning} implementado y comparar sus resultados.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: media - 3 \textit{Story Points}
@@ -309,11 +309,11 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
         \end{itemize}
     \end{itemize}
 \newpage    
-  \item \textbf{\'{E}pica 3 - Despliegue en entorno \textit{MLFlow}}
+  \item \textbf{\'{E}pica 3 - Despliegue en entorno MLFlow}
     \begin{itemize}
-      \item HU7 - Despliegue en \textit{MLFlow}
+      \item HU7 - Despliegue en MLFlow
         \begin{itemize}
-            \item Como ingeniero del proyecto, quiero desplegar un entorno local de \textit{MLFLow} en donde se repliquen los pasos de procesamiento de datos e implementación y comparación de modelos.
+            \item Como ingeniero del proyecto, quiero desplegar un entorno local de MLFlow en donde se repliquen los pasos de procesamiento de datos e implementación y comparación de modelos.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: alta - 5 \textit{Story Points}
@@ -323,9 +323,9 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
                 \item Total: 13 \textit{Story Points}
             \end{itemize}
         \end{itemize}
-      \item HU8 - \textit{API} para entorno \textit{MLFlow}
+      \item HU8 - API para entorno MLFlow
         \begin{itemize}
-            \item Como ingeniero del proyecto, quiero exponer el entorno de \textit{MLFlow} mediante una \textit{API} para facilitar el acceso y su utilización.
+            \item Como ingeniero del proyecto, quiero exponer el entorno de MLFlow mediante una API para facilitar el acceso y su utilización.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: baja - 1 \textit{Story Points}
@@ -363,9 +363,9 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
             \end{itemize}
         \end{itemize}
 \newpage        
-      \item HU11 - Validación de \textit{API} de \textit{MLFlow}
+      \item HU11 - Validación de API de MLFlow
         \begin{itemize}
-            \item Como usuario final, quiero consultar los resultados y comparaciones de los modelos mediante la \textit{API} del entorno de \textbf{MLFlow}, para poder analizarlos.
+            \item Como usuario final, quiero consultar los resultados y comparaciones de los modelos mediante la API del entorno de MLFlow, para poder analizarlos.
             \item Ponderación
             \begin{itemize}
                 \item Dificultad: media - 3 \textit{Story Points}
@@ -408,9 +408,9 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
     \end{itemize}
   \item \textbf{\'{E}pica 2 - Implementación y comparación de modelos}
     \begin{itemize}
-      \item Criterios de aceptación HU4 - Implementación de modelos de \textit{Machine Learning}
+      \item Criterios de aceptación HU4 - Implementación de modelos de \textit{machine learning}
         \begin{itemize}
-            \item Se implementan distintos modelos de \textit{Machine Learning}.
+            \item Se implementan distintos modelos de \textit{machine learning}.
             \item Se justifica el uso de cada uno de los modelos implementados.
             \item Se persisten los modelos generados en GitHub, para futuros análisis y comparaciones.
         \end{itemize}
@@ -430,11 +430,11 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
             \item Se comparan los distintos modelos mediante las métricas definidas.
         \end{itemize}
     \end{itemize}
-  \item \textbf{\'{E}pica 3 - Despliegue en entorno \textit{MLFlow}}
+  \item \textbf{\'{E}pica 3 - Despliegue en entorno MLFlow}
     \begin{itemize}
-      \item Criterios de aceptación HU7 - Despliegue en \textit{MLFlow}
+      \item Criterios de aceptación HU7 - Despliegue en MLFlow
         \begin{itemize}
-            \item Se crea un entorno \textit{MLFlow} local desde cero
+            \item Se crea un entorno MLFlow local desde cero
             \item Se configura el paso correspondiente al análisis de datos en el entorno.
             \item Se replican las técnicas exploradas de análisis de datos en el paso correspondiente.
             \item Se configura el paso de entrenamiento de modelos en el entorno.
@@ -442,27 +442,27 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
             \item Se configura el paso de evaluación de modelos en el entorno.
             \item Se replican las técnicas exploradas de evaluación de modelos en el paso correspondiente.
         \end{itemize}
-      \item Criterios de aceptación HU8 - \textit{API} para entorno \textit{MLFlow}
+      \item Criterios de aceptación HU8 - API para entorno MLFlow
         \begin{itemize}
-            \item Se exponen los resultados de los modelos explorados en el entorno de \textit{MLFlow} mediante una \textit{API}.
-            \item Se exponen las comparaciones de los modelos explorados en el entorno de \textit{MLFlow} mediante una \textit{API}.
+            \item Se exponen los resultados de los modelos explorados en el entorno de MLFlow mediante una API.
+            \item Se exponen las comparaciones de los modelos explorados en el entorno de MLFlow mediante una API.
         \end{itemize}
     \end{itemize}
   \item \textbf{\'{E}pica 4 - Gestión de calidad del código fuente}
     \begin{itemize}
       \item Criterios de aceptación HU9 - Implementación de buenas prácticas
         \begin{itemize}
-            \item Se implementan buenas prácticas de código \textit{Python} en el proyecto.
+            \item Se implementan buenas prácticas de código Python en el proyecto.
         \end{itemize}
       \item Criterios de aceptación HU10 - Documentación
         \begin{itemize}
             \item Se documentan todos los pasos realizados durante el desarrollo del proyecto.
             \item Se valida que cada paso realizado esté correctamente justificado.
         \end{itemize}
-      \item Criterios de aceptación HU11 - Validación de \textit{API} de \textit{MLFlow}
+      \item Criterios de aceptación HU11 - Validación de API de MLFlow
         \begin{itemize}
-            \item Se valida el acceso a los resultados de los modelos mediante la \textit{API} del entorno \textit{MLFlow}.
-            \item Se valida el acceso a la comparación de los modelos mediante la \textit{API} del entorno \textit{MLFlow}.
+            \item Se valida el acceso a los resultados de los modelos mediante la API del entorno MLFlow.
+            \item Se valida el acceso a la comparación de los modelos mediante la API del entorno MLFlow.
         \end{itemize}
     \end{itemize}
 \end{itemize}
@@ -472,26 +472,26 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
 \begin{enumerate}
   \item \textbf{Comprensión del negocio:}
     \begin{itemize}
-        \item \textit{Objetivo:} predecir si una empresa va a entrar en quiebra o no.
-        \item \textit{Impacto:} ayudar en la toma de decisiones a empresas especializadas en finanzas, en inversiones, en prestación de seguros, entre otras, permitiéndoles saber si una empresa sobre la que se quiere invertir o a la que se le quiere otorgar un préstamo puede entrar en quiebra o no.
-        \item \textit{Métricas:} se predice correctamente si la empresa quiebra o no.
+        \item Objetivo: predecir si una empresa va a entrar en quiebra o no.
+        \item Impacto: ayudar en la toma de decisiones a empresas especializadas en finanzas, en inversiones, en prestación de seguros, entre otras, permitiéndoles saber si una empresa sobre la que se quiere invertir o a la que se le quiere otorgar un préstamo puede entrar en quiebra o no.
+        \item Métricas: se predice correctamente si la empresa quiebra o no.
     \end{itemize}
   \item \textbf{Comprensión de los datos}
     \begin{itemize}
-        \item \textit{Tipos de datos:} datos tabulares.
-        \item \textit{Fuente de datos:} datos publicados por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}.
-        \item \textit{Cantidad de datos:} 6819 registros con 96 columnas.
+        \item Tipos de datos: datos tabulares.
+        \item Fuente de datos: datos publicados por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}.
+        \item Cantidad de datos: 6819 registros con 96 columnas.
     \end{itemize}
   \item \textbf{Preparación de los datos}
     \begin{itemize}
-        \item \textit{Transformaciones}
+        \item Transformaciones
             \begin{itemize}
                 \item Análisis y ajuste de datos atípicos.
                 \item Análisis y ajuste de datos faltantes.
                 \item Creación de nuevas variables al combinar las variables existentes.
                 \item Normalización de datos.
             \end{itemize}
-        \item \textit{Características clave}
+        \item Características clave
             \begin{itemize}
                 \item Indicador de si la empresa entró en quiebra o variable \textit{target}.
                 \item Distintas métricas del desempeño de la empresa a nivel económico y contable.
@@ -499,8 +499,8 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
     \end{itemize}
   \item \textbf{Modelado}
     \begin{itemize}
-        \item \textit{Tipo de problema:} clasificación.
-        \item \textit{Arquitecturas posibles:} modelos de clasificación como \textit{Logistic Regression}, \textit{Support Vector Machines} y \textit{XGBoost}.
+        \item Tipo de problema: clasificación.
+        \item Arquitecturas posibles: modelos de clasificación como \textit{Logistic Regression}, \textit{Support Vector Machines} y \textit{XGBoost}.
     \end{itemize}
   \item \textbf{Evaluación del modelo}
     \begin{itemize}
@@ -508,7 +508,7 @@ Incertidumbre & 1 & 5 & 8 \\ \hline
     \end{itemize}
   \item \textbf{Despliegue del modelo}
     \begin{itemize}
-        \item Despliegue local usando \textit{MLFlow}.
+        \item Despliegue local usando MLFlow.
     \end{itemize}
 \end{enumerate}
 
@@ -544,7 +544,7 @@ HU1 - Análisis exploratorio & Documentar pasos y decisiones tomadas & 4 h & Med
 
 HU2 - Procesamiento de datos faltantes y datos atípicos & Investigar técnicas de balanceo de clases para algoritmos de clasificación & 6 h & Media \\ \hline
 HU2 - Procesamiento de datos faltantes y datos atípicos & Implementar técnicas de balanceo de clases para algoritmos de clasificación & 5 h & Media \\ \hline
-HU2 - Procesamiento de datos faltantes y datos atípicos & Separar \textit{dataset} en \textit{train} y \textit{test} & 3 h & Media \\ \hline
+HU2 - Procesamiento de datos faltantes y datos atípicos & Separar dataset en \textit{train} y \textit{test} & 3 h & Media \\ \hline
 HU2 - Procesamiento de datos faltantes y datos atípicos & Identificar variables con datos faltantes & 4 h & Alta \\ \hline
 HU2 - Procesamiento de datos faltantes y datos atípicos & Analizar causas de datos faltantes & 6 h & Alta \\ \hline
 HU2 - Procesamiento de datos faltantes y datos atípicos & Corregir datos faltantes & 8 h & Alta \\ \hline
@@ -561,81 +561,81 @@ HU3 - \textit{Feature Engineering} & Aplicar otras técnicas de creación de var
 HU3 - \textit{Feature Engineering} & Evaluar nuevas variables en modelos & 5 h & Alta \\ \hline
 HU3 - \textit{Feature Engineering} & Documentar pasos y decisiones tomadas & 3 h & Baja \\ \hline
 
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{Logistic Regression} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h & Alta \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, considerando \textit{feature engineering} & 6 h & Alta \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{SVM} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering} & 6 h & Alta \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, considerando \textit{feature engineering} & 6 h & Alta \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{XGBoost} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & 8 h & Alta \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering} & 8 h & Alta \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, considerando \textit{feature engineering} & 6 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Persistir modelos en \textit{GitHub} & 4 h & Media \\ \hline
-HU4 - Implementación de modelos de \textit{Machine Learning} & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar código de validación cruzada para \textit{Logistic Regression} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{Logistic Regression}, con \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{Logistic Regression}, con \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar código de validación cruzada para \textit{SVM} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{SVM}, con \textit{feature engineering} & 6 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{SVM}, con \textit{feature engineering} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar código de validación cruzada para \textit{XGBoost} & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & 8 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{XGBoost}, con \textit{feature engineering} & 8 h & Alta \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{XGBoost}, con \textit{feature engineering} & 6 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Persistir modelos en GitHub & 4 h & Media \\ \hline
+HU4 - Implementación de modelos de \textit{machine learning} & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{Logistic Regression} & 5 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, considerando \textit{feature engineering} & 6 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, con \textit{feature engineering} & 6 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, con \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, con \textit{feature engineering} & 4 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{SVM} & 5 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, sin considerar \textit{feature engineering} & 6 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, sin considerar \textit{feature engineering} & 4 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, considerando \textit{feature engineering} & 6 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, considerando \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, con \textit{feature engineering} & 6 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, con \textit{feature engineering} & 4 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, con \textit{feature engineering} & 4 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{XGBoost} & 7 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, sin considerar \textit{feature engineering} & 8 h & Alta \\ \hline
 HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, sin considerar \textit{feature engineering} & 5 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, sin considerar \textit{feature engineering} & 7 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, considerando \textit{feature engineering} & 8 h & Alta \\ \hline
-HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, considerando \textit{feature engineering} & 5 h & Media \\ \hline
-HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, considerando \textit{feature engineering} & 7 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, con \textit{feature engineering} & 8 h & Alta \\ \hline
+HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, con \textit{feature engineering} & 5 h & Media \\ \hline
+HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, con \textit{feature engineering} & 7 h & Media \\ \hline
 HU5 - Optimización de hiperparámetros & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
 HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering} & 3 h & Media \\ \hline
 HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
-HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, considerando \textit{feature engineering} & 3 h & Media \\ \hline
-HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, considerando \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, con \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, con \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
 HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, sin  considerar \textit{feature engineering} & 3 h & Media \\ \hline
 HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, sin  considerar \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
-HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, considerando \textit{feature engineering} & 3 h & Media \\ \hline
-HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, considerando \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, con \textit{feature engineering} & 3 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, con \textit{feature engineering}, y graficar & 5 h & Media \\ \hline
 HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering} & 3 h & Media \\ \hline
 HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar & 6 h & Media \\ \hline
-HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering} & 4 h & Media \\ \hline
-HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar & 6 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, con \textit{feature engineering} & 4 h & Media \\ \hline
+HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, con \textit{feature engineering}, y graficar & 6 h & Media \\ \hline
 HU6 - Métricas de modelos & Comparar métricas de distintos modelos & 3 h & Media \\ \hline
 HU6 - Métricas de modelos & Documentar pasos y decisiones tomadas & 5 h & Media \\ \hline
 
-HU7 - Despliegue en \textit{MLFlow} & Investigar buenas prácticas para despliegues de \textit{MLFlow} & 5 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Crear entorno local para despliegue \textit{MLFlow} & 7 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de análisis de datos en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow} & 8 h & Alta \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Ejecutar localmente el entorno \textit{MLFlow} & 4 h & Media \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Validar ejecución local del entorno \textit{MLFlow} & 4 h & Media \\ \hline
-HU7 - Despliegue en \textit{MLFlow} & Documentar pasos y decisiones tomadas \textit{MLFlow} & 6 h & Media \\ \hline
-HU8 - \textit{API} para entorno \textit{MLFlow} & Investigar como exponer un entorno \textit{MLFlow} mediante \textit{API} & 6 h & Media \\ \hline
-HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer resultados de modelos explorados en entorno \textit{MLFlow} mediante \textit{API} & 8 h & Alta \\ \hline
-HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer comparación de modelos en entorno \textit{MLFlow} mediante \textit{API} & 8 h & Alta \\ \hline
-HU8 - \textit{API} para entorno \textit{MLFlow} & Documentar pasos y decisiones tomadas & 4 h & Baja \\ \hline
-HU9 - Implementación de buenas prácticas & Investigar buenas prácticas en código \textit{Python} & 4 h & Baja \\ \hline
-HU9 - Implementación de buenas prácticas & Aplicar buenas prácticas en código \textit{Python} & 8 h & Media \\ \hline
+HU7 - Despliegue en MLFlow & Investigar buenas prácticas para despliegues de MLFlow & 5 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Crear entorno local para despliegue MLFlow & 7 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Replicar técnicas de análisis de datos en entorno MLFlow & 8 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno MLFlow & 8 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno MLFlow & 8 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno MLFlow & 8 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Replicar técnicas de evaluación de modelos en entorno MLFlow & 8 h & Alta \\ \hline
+HU7 - Despliegue en MLFlow & Ejecutar localmente el entorno MLFlow & 4 h & Media \\ \hline
+HU7 - Despliegue en MLFlow & Validar ejecución local del entorno MLFlow & 4 h & Media \\ \hline
+HU7 - Despliegue en MLFlow & Documentar pasos y decisiones tomadas MLFlow & 6 h & Media \\ \hline
+HU8 - API para entorno MLFlow & Investigar como exponer un entorno MLFlow mediante API & 6 h & Media \\ \hline
+HU8 - API para entorno MLFlow & Exponer resultados de modelos explorados en entorno MLFlow mediante API & 8 h & Alta \\ \hline
+HU8 - API para entorno MLFlow & Exponer comparación de modelos en entorno MLFlow mediante API & 8 h & Alta \\ \hline
+HU8 - API para entorno MLFlow & Documentar pasos y decisiones tomadas & 4 h & Baja \\ \hline
+HU9 - Implementación de buenas prácticas & Investigar buenas prácticas en código Python & 4 h & Baja \\ \hline
+HU9 - Implementación de buenas prácticas & Aplicar buenas prácticas en código Python & 8 h & Media \\ \hline
 HU10 - Documentación & Asegurar que cada decisión tomada haya sido justificada y documentada & 6 h & Media \\ \hline
 HU10 - Documentación & Asegurar ortografía y formato en documentación & 8 h & Media \\ \hline
-HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a modelos explorados mediante \textit{API} de entorno \textit{MLFlow} & 8 h & Media \\ \hline
-HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a comparación de modelos mediante \textit{API} de entorno \textit{MLFlow} & 8 h & Media \\ \hline
-HU11 - Validación de \textit{API} de \textit{MLFlow} & Crear documentación sobre el uso de \textit{API} de entorno \textit{MLFlow} & 5 h & Media \\ \hline
+HU11 - Validación de API de MLFlow & Validar acceso a modelos explorados mediante API de entorno MLFlow & 8 h & Media \\ \hline
+HU11 - Validación de API de MLFlow & Validar acceso a comparación de modelos mediante API de entorno MLFlow & 8 h & Media \\ \hline
+HU11 - Validación de API de MLFlow & Crear documentación sobre el uso de API de entorno MLFlow & 5 h & Media \\ \hline
 Planificación del proyecto y confección de informes de avance (opcional) & Planificación del proyecto & 8 h & Alta \\ \hline
 Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Secciones 1 a 5 inclusive & 6 h & Media \\ \hline
 Planificación del proyecto y confección de informes de avance (opcional) & Informe de avance - Secciones 6 a 9 inclusive & 5 h & Media \\ \hline
@@ -646,7 +646,7 @@ Redacción de memoria (opcional) & Redacción de sección sobre \textit{procesam
 Redacción de memoria (opcional) & Redacción de sección sobre \textit{Feature Engineering} & 3 h & Media \\ \hline
 Redacción de memoria (opcional) & Redacción de sección sobre \textit{implementación de modelos} & 7 h & Media \\ \hline
 Redacción de memoria (opcional) & Redacción de sección sobre \textit{optimización de hiperparámetros} & 6 h & Media \\ \hline
-Redacción de memoria (opcional) & Redacción de sección sobre \textit{MLFlow} & 5 h & Media \\ \hline
+Redacción de memoria (opcional) & Redacción de sección sobre MLFlow & 5 h & Media \\ \hline
 Redacción de memoria (opcional) & Correcciones generales & 8 h & Media \\ \hline
 Preparación de presentación final (opcional) & Confección de presentación \textit{PowerPoint} & 6 h & Alta \\ \hline
 Preparación de presentación final (opcional) & Confección de video demostración & 8 h & Alta \\ \hline
@@ -684,7 +684,7 @@ Sprint 1 & HU1 - Análisis exploratorio  & Documentar pasos y decisiones tomadas
 
 Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Investigar técnicas de balanceo de clases para algoritmos de clasificación  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Implementar técnicas de balanceo de clases para algoritmos de clasificación  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Separar \textit{dataset} en \textit{train} y \textit{test}  & 3 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Separar dataset en \textit{train} y \textit{test}  & 3 h / 2 SP & Alumno & 0 \% \\ \hline
 Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Identificar variables con datos faltantes  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
 Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Analizar causas de datos faltantes  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 1 & HU2 - Procesamiento de datos faltantes y datos atípicos & Corregir datos faltantes  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
@@ -700,86 +700,86 @@ Sprint 2 & HU3 - \textit{Feature Engineering}  & Investigar otras técnicas de c
 Sprint 2 & HU3 - \textit{Feature Engineering}  & Aplicar otras técnicas de creación de variables  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
 Sprint 2 & HU3 - \textit{Feature Engineering}  & Evaluar nuevas variables en modelos  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 2 & HU3 - \textit{Feature Engineering}  & Documentar pasos y decisiones tomadas  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{Logistic Regression}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{Logistic Regression}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{Logistic Regression}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{SVM}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering}  & 4 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{SVM}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{SVM}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar código de validación cruzada para \textit{XGBoost}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 3 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Evaluar modelo \textit{XGBoost}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Persistir modelos en \textit{GitHub}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 4 & HU4 - Implementación de modelos de \textit{Machine Learning} & Documentar pasos y decisiones tomadas  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar código de validación cruzada para \textit{Logistic Regression}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{Logistic Regression}, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{Logistic Regression}, con \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{Logistic Regression}, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar código de validación cruzada para \textit{SVM}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{SVM}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{SVM}, sin considerar \textit{feature engineering}  & 4 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{SVM}, con \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{SVM}, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar código de validación cruzada para \textit{XGBoost}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 3 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{XGBoost}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{machine learning} & Implementar modelo \textit{XGBoost}, con \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{machine learning} & Evaluar modelo \textit{XGBoost}, con \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{machine learning} & Persistir modelos en GitHub  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 4 & HU4 - Implementación de modelos de \textit{machine learning} & Documentar pasos y decisiones tomadas  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 4 & HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{Logistic Regression}  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 4 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 4 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, sin considerar \textit{feature engineering} & 4 h / 2 SP & Alumno & 0 \% \\ \hline
 Sprint 4 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 4 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 4 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 4 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{Logistic Regression}, con \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{Logistic Regression}, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 4 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{Logistic Regression} con hiperparámetros óptimos, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{SVM}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, sin considerar \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, sin considerar \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, considerando \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{SVM}, con \textit{feature engineering}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{SVM}, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{SVM} con hiperparámetros óptimos, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Identificar hiperparámetros y rangos de \textit{XGBoost}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, sin considerar \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, sin considerar \textit{feature engineering} & 5 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 5 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, sin considerar \textit{feature engineering}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
-Sprint 6 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, considerando \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 6 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, considerando \textit{feature engineering}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 6 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, considerando \textit{feature engineering}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Optimizar hiperparámetros de \textit{XGBoost}, con \textit{feature engineering}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Implementar hiperparámetros más óptimos en \textit{XGBoost}, con \textit{feature engineering}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 6 & HU5 - Optimización de hiperparámetros & Evaluar modelo de \textit{XGBoost} con hiperparámetros óptimos, con \textit{feature engineering}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
 Sprint 6 & HU5 - Optimización de hiperparámetros & Documentar pasos y decisiones tomadas  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
 Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, sin  considerar \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, considerando \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, considerando \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{Logistic Regression}, con \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{Logistic Regression}, con \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, sin  considerar \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
 Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, sin  considerar \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, considerando \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, considerando \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{SVM}, con \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{SVM}, con \textit{feature engineering}, y graficar  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 6 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering}  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
 
 Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, con \textit{feature engineering}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU6 - Métricas de modelos & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, con \textit{feature engineering}, y graficar  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 7 & HU6 - Métricas de modelos & Comparar métricas de distintos modelos  & 3 h / 2 SP & Alumno & 0 \%\\ \hline
 Sprint 7 & HU6 - Métricas de modelos & Documentar pasos y decisiones tomadas & 5 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Investigar buenas prácticas para despliegues de \textit{MLFlow}  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Crear entorno local para despliegue \textit{MLFlow}  & 7 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de análisis de datos en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 7 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Ejecutar localmente el entorno \textit{MLFlow}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Validar ejecución local del entorno \textit{MLFlow}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
-Sprint 8 & HU7 - Despliegue en \textit{MLFlow}  & Documentar pasos y decisiones tomadas \textit{MLFlow}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Investigar como exponer un entorno \textit{MLFlow} mediante \textit{API}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer resultados de modelos explorados en entorno \textit{MLFlow} mediante \textit{API}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Exponer comparación de modelos en entorno \textit{MLFlow} mediante \textit{API}  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
-Sprint 8 & HU8 - \textit{API} para entorno \textit{MLFlow} & Documentar pasos y decisiones tomadas  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 8 & HU9 - Implementación de buenas prácticas  & Investigar buenas prácticas en código \textit{Python}  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
-Sprint 9 & HU9 - Implementación de buenas prácticas  & Aplicar buenas prácticas en código \textit{Python}  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 7 & HU7 - Despliegue en MLFlow  & Investigar buenas prácticas para despliegues de MLFlow  & 5 h / 3 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en MLFlow  & Crear entorno local para despliegue MLFlow  & 7 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en MLFlow  & Replicar técnicas de análisis de datos en entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en MLFlow  & Replicar técnicas de entrenamiento de modelos de \textit{Logistic Regression} en entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 7 & HU7 - Despliegue en MLFlow  & Replicar técnicas de entrenamiento de modelos de \textit{SVM} en entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU7 - Despliegue en MLFlow  & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU7 - Despliegue en MLFlow  & Replicar técnicas de evaluación de modelos en entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU7 - Despliegue en MLFlow  & Ejecutar localmente el entorno MLFlow  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU7 - Despliegue en MLFlow  & Validar ejecución local del entorno MLFlow  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU7 - Despliegue en MLFlow  & Documentar pasos y decisiones tomadas MLFlow  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU8 - API para entorno MLFlow & Investigar como exponer un entorno MLFlow mediante API  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 8 & HU8 - API para entorno MLFlow & Exponer resultados de modelos explorados en entorno MLFlow mediante API  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU8 - API para entorno MLFlow & Exponer comparación de modelos en entorno MLFlow mediante API  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU8 - API para entorno MLFlow & Documentar pasos y decisiones tomadas  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 8 & HU9 - Implementación de buenas prácticas  & Investigar buenas prácticas en código Python  & 4 h / 2 SP & Alumno & 0 \%\\ \hline
+Sprint 9 & HU9 - Implementación de buenas prácticas  & Aplicar buenas prácticas en código Python  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
 Sprint 9 & HU10 - Documentación  & Asegurar que cada decisión tomada haya sido justificada y documentada  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 9 & HU10 - Documentación  & Asegurar ortografía y formato en documentación  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
-Sprint 9 & HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a modelos explorados mediante \textit{API} de entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
-Sprint 9 & HU11 - Validación de \textit{API} de \textit{MLFlow} & Validar acceso a comparación de modelos mediante \textit{API} de entorno \textit{MLFlow}  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
-Sprint 9 & HU11 - Validación de \textit{API} de \textit{MLFlow} & Crear documentación sobre el uso de \textit{API} de entorno \textit{MLFlow}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU11 - Validación de API de MLFlow & Validar acceso a modelos explorados mediante API de entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU11 - Validación de API de MLFlow & Validar acceso a comparación de modelos mediante API de entorno MLFlow  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
+Sprint 9 & HU11 - Validación de API de MLFlow & Crear documentación sobre el uso de API de entorno MLFlow  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 9 & Redacción de memoria  & Redacción de sección sobre \textit{procesamiento de datos}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 9 & Redacción de memoria  & Redacción de sección sobre \textit{Feature Engineering}  & 4 h / 2 SP & Alumno & 0 \% \\ \hline
 Sprint 9 & Redacción de memoria  & Redacción de sección sobre \textit{implementación de modelos}  & 7 h / 5 SP & Alumno & 0 \% \\ \hline
 Sprint 10 & Redacción de memoria  & Redacción de sección sobre \textit{optimización de hiperparámetros}  & 6 h / 3 SP & Alumno & 0 \% \\ \hline
-Sprint 10 & Redacción de memoria  & Redacción de sección sobre \textit{MLFlow}  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
+Sprint 10 & Redacción de memoria  & Redacción de sección sobre MLFlow  & 5 h / 3 SP & Alumno & 0 \% \\ \hline
 Sprint 10 & Redacción de memoria  & Correcciones generales  & 8 h / 5 SP & Alumno & 0 \% \\ \hline
 Sprint 10 & Preparación de presentación final  & Confección de presentación \textit{PowerPoint}  & 6 h / 3 SP & Alumno & 0 \%\\ \hline
 Sprint 10 & Preparación de presentación final  & Confección de video demostración  & 8 h / 5 SP & Alumno & 0 \%\\ \hline
@@ -834,16 +834,16 @@ El diagrama Gantt se puede observar en las figuras \ref{fig:gantt1}, \ref{fig:ga
 \rowcolor[HTML]{C0C0C0}
 Sprint  & Cantidad de Horas & Fecha Inicio              & Fecha Fin \\ \hline
 0       & 32 h              & \fechaInicioName          & 4 de julio de 2025 \\ \hline
-1       & 58 h              & 7 de julio de 2025        & 25 de julio de 2025 \\ \hline
-2       & 60 h              & 28 de julio de 2025       & 15 de agosto de 2025 \\ \hline
-3       & 64 h              & 18 de agosto de 2025      & 5 de septiembre de 2025 \\ \hline
+1       & 60 h              & 7 de julio de 2025        & 25 de julio de 2025 \\ \hline
+2       & 64 h              & 28 de julio de 2025       & 15 de agosto de 2025 \\ \hline
+3       & 60 h              & 18 de agosto de 2025      & 5 de septiembre de 2025 \\ \hline
 4       & 62 h              & 8 de septiembre de 2025   & 26 de septiembre de 2025 \\ \hline
 5       & 60 h              & 29 de septiembre de 2025  & 17 de octubre de 2025 \\ \hline
-6       & 57 h              & 20 de octubre de 2025     & 7 de noviembre de 2025 \\ \hline
+6       & 60 h              & 20 de octubre de 2025     & 7 de noviembre de 2025 \\ \hline
 7       & 60 h              & 10 de noviembre de 2025   & 28 de noviembre de 2025 \\ \hline
-8       & 58 h              & 1 de diciembre de 2025    & 19 de diciembre de 2025 \\ \hline
-9       & 60 h              & 2 de marzo de 2026        & 20 de marzo de 2026 \\ \hline
-10      & 59 h              & 23 de marzo de 2026       & 10 de abril de 2026 \\ \hline
+8       & 60 h              & 1 de diciembre de 2025    & 19 de diciembre de 2025 \\ \hline
+9       & 61 h              & 2 de marzo de 2026        & 20 de marzo de 2026 \\ \hline
+10      & 63 h              & 23 de marzo de 2026       & 10 de abril de 2026 \\ \hline
 \end{tabularx}
 \caption{Resumen de sprints del diagrama Gantt.}
 \label{table:gantt-resumen}
@@ -884,7 +884,7 @@ Amarillo    & Hito \\ \hline
 \begin{figure}[htpb]
 \centering 
 \includegraphics[width=1.2\textwidth]{./Figuras/Gantt-1.png}
-\caption{Diagrama de Gantt - Sprints 0, 1 y 2}
+\caption{Diagrama de Gantt - Sprints 0, 1 y 2.}
 \label{fig:gantt1}
 \end{figure}
 \end{landscape}
@@ -893,7 +893,7 @@ Amarillo    & Hito \\ \hline
 \begin{figure}[htpb]
 \centering 
 \includegraphics[width=1.5\textwidth]{./Figuras/Gantt-2.png}
-\caption{Diagrama de Gantt - Sprints 3, 4 y 5}
+\caption{Diagrama de Gantt - Sprints 3, 4 y 5.}
 \label{fig:gantt2}
 \end{figure}
 \end{landscape}
@@ -902,7 +902,7 @@ Amarillo    & Hito \\ \hline
 \begin{figure}[htpb]
 \centering 
 \includegraphics[width=1.5\textwidth]{./Figuras/Gantt-3.png}
-\caption{Diagrama de Gantt - Sprints 6, 7 y 8}
+\caption{Diagrama de Gantt - Sprints 6, 7 y 8.}
 \label{fig:gantt3}
 \end{figure}
 \end{landscape}
@@ -911,7 +911,7 @@ Amarillo    & Hito \\ \hline
 \begin{figure}[htpb]
 \centering 
 \includegraphics[width=1.5\textwidth]{./Figuras/Gantt-4.png}
-\caption{Diagrama de Gantt - Sprints 9 y 10}
+\caption{Diagrama de Gantt - Sprints 9 y 10.}
 \label{fig:gantt4}
 \end{figure}
 \end{landscape}
@@ -931,19 +931,19 @@ Amarillo    & Hito \\ \hline
 
 %Este análisis es clave para garantizar el cumplimiento normativo y evitar conflictos legales durante el desarrollo y publicación del proyecto.
 
-El proyecto utilizará el \textit{dataset} de \href{https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction}{\textit{Taiwanese Bankruptcy Prediction}}.
+El proyecto utilizará el dataset de \href{https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction}{\textit{Taiwanese Bankruptcy Prediction}}.
 
-El \textit{dataset} está publicado bajo la licencia \href{https://creativecommons.org/licenses/by/4.0/legalcode}{\textit{Creative Commons Attribution 4.0 International}}, la que permite la copia, distribución, exhibición y ejecución de los datos siempre y cuando se dé crédito al autor y/o publicador, en este caso el \href{https://archive.ics.uci.edu/}{repositorio de \textit{Machine Learning} de \textit{UC Irvine}}.
+El dataset está publicado bajo la licencia \href{https://creativecommons.org/licenses/by/4.0/legalcode}{\textit{Creative Commons Attribution 4.0 International}}, que permite la copia, distribución, exhibición y ejecución de los datos siempre y cuando se dé crédito al autor y/o publicador, en este caso el \href{https://archive.ics.uci.edu/}{repositorio de \textit{machine learning} de \textit{UC Irvine}}.
 
-La información que presenta el \textit{dataset} fue recolectada y publicada por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}. Tal como se menciona en la sección de \href{https://www.tejwin.com/en/solution/financial-data/}{\textit{financial data}} de su sitio web, todos los datos financieros que ellos presentan se obtienen de:
+La información que presenta el dataset fue recolectada y publicada por el \href{https://www.tejwin.com/en/}{Taiwan Economic Journal}. Tal como se menciona en la sección de \href{https://www.tejwin.com/en/solution/financial-data/}{\textit{financial data}} de su sitio web, todos los datos financieros que ellos presentan se obtienen de:
 \begin{itemize}
     \item Informes auditados por contadores públicos certificados.
-    \item Datos mensuales sobre ingresos proporcionados por empresas que cotizan en la bolsa de Taiwán
+    \item Datos mensuales sobre ingresos proporcionados por empresas que cotizan en la bolsa de Taiwán.
 \end{itemize}
 
-Como dato adicional, en el \textit{dataset} no se mencionan los nombres de las empresas ni datos similares, solo presenta información financiera.
+Como dato adicional, en el dataset no se mencionan los nombres de las empresas ni datos similares, solo presenta información financiera.
 
-Por todo lo mencionado se puede garantizar que no existirán inconvenientes con el \textit{dataset} de \href{https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction}{\textit{Taiwanese Bankruptcy Prediction}} durante el desarrollo y publicación del proyecto. Solamente hay que dar crédito a su publicador (\href{https://archive.ics.uci.edu/}{repositorio de \textit{Machine Learning} de \textit{UC Irvine}}).
+Por todo lo mencionado se puede garantizar que no existirán inconvenientes con el dataset de \href{https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction}{\textit{Taiwanese Bankruptcy Prediction}} durante el desarrollo y publicación del proyecto. Solamente hay que dar crédito a su publicador (\href{https://archive.ics.uci.edu/}{repositorio de \textit{machine learning} de \textit{UC Irvine}}).
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
@@ -951,31 +951,31 @@ Por todo lo mencionado se puede garantizar que no existirán inconvenientes con 
 Riesgo 1: datos no fiables.
 \begin{itemize}
 	\item Severidad (7): este riesgo es de severidad alta ya que si los datos no son fiables, los resultados obtenidos serán de mala calidad.
-	\item Probabilidad de ocurrencia (2): se considera que la propobabilidad de ocurrencia es baja, ya que se hizo un relevamiento sobre otros proyectos que utilizan estos datos, y los mismos presentan resultados con buena calidad.
+	\item Probabilidad de ocurrencia (2): se considera que la propobabilidad de ocurrencia es baja, ya que se realizó un relevamiento sobre otros proyectos que utilizan estos datos, y los mismos presentan resultados con buena calidad.
 \end{itemize}   
 
 Riesgo 2: falla o ruptura del equipo de trabajo (laptop).
 \begin{itemize}
-	\item Severidad (10): este riesgo es de severidad alta ya que si el equipo con el cual se realiza el proyecto sufre una falla o una ruptura, tanto el código como los tiempos del mismo tamién se verán afectados.
+	\item Severidad (10): este riesgo es de severidad alta ya que si el equipo con el que se realiza el proyecto sufre una falla o una ruptura, tanto el código como los tiempos del mismo tamién se verán afectados.
 	\item Probabilidad de ocurrencia (5): se considera que la propobabilidad de ocurrencia es media, ya que hasta el momento de realizar la planificación el equipo no sufrió inconvenientes, pero eso no implica que no pueda haberlos en un futuro.
 \end{itemize}   
 
 Riesgo 3: los modelos explorados no son suficientes para explicar el problema.
 \begin{itemize}
-	\item Severidad (6): se considera como un riesgo de severidad media, ya que si ocurre sería necesario explorar otros modelos, lo cual afectaría los tiempos del proyecto.
+	\item Severidad (6): se considera como un riesgo de severidad media, ya que si ocurre sería necesario explorar otros modelos, lo que afectaría los tiempos del proyecto.
 	\item Ocurrencia (2): se considera una probabilidad de ocurrencia baja, ya que en general, los modelos que se utilizarán (\textit{SVM}, \textit{Logistic Regression} y \textit{XGBoost}) suelen tener buenos resultados en análisis similares.
 \end{itemize}
 
-Riesgo 4: falta de experiencia en uso de \textit{MLOps}.
+Riesgo 4: falta de experiencia en uso de MLOps.
 \begin{itemize}
-	\item Severidad (8): es un riesgo alto ya que al no tener experiencia de trabajo con dicha herramienta, su estimación podría ser errónea, lo cual implicaría modificar los tiempos necesarios para desarrollarla.
-	\item Ocurrencia (7): ya que al momento de realizar la planificación se cuenta con poca experiencia de trabajo con \textit{MLOps}. 
+	\item Severidad (8): es un riesgo alto ya que al no tener experiencia de trabajo con dicha herramienta, su estimación podría ser errónea, lo que implicaría modificar los tiempos necesarios para desarrollarla.
+	\item Ocurrencia (7): ya que al momento de realizar la planificación se cuenta con poca experiencia de trabajo con MLOps. 
 \end{itemize}
 
-Riesgo 5: se requiere utilizar computación en la nube para trabajar con \textit{MLOps}.
+Riesgo 5: se requiere utilizar computación en la nube para trabajar con MLOps.
 \begin{itemize}
 	\item Severidad (6): es un riesgo medio ya que implicaría un costo adicional en el desarrollo del proyecto.
-	\item Ocurrencia (3): al momento de realizar la planificación, se hizo un breve análisis sobre esta herramienta, y en el mismo se relevó que no es necesario el uso de computación en la nube para implementar \textit{MLOps}. 
+	\item Ocurrencia (3): al momento de realizar la planificación, se hizo un breve análisis sobre esta herramienta, y en el mismo se relevó que no es necesario el uso de computación en la nube para implementar MLOps. 
 \end{itemize}
 
 
@@ -990,8 +990,8 @@ Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
 Datos no fiables       &  7  &  2  &  14   & - & - & - \\ \hline
 Falla o ruptura del equipo de trabajo (laptop) & 10 & 5 &  50   & 5* & 5* & 25* \\ \hline
 Los modelos explorados no son suficientes para explicar el problema & 6 & 2 & 12 & - & - & - \\ \hline
-Falta de experiencia en uso de \textit{MLOps} & 8 &  7  &  56   &  4*  & 5* & 20* \\ \hline
-Se requiere utilizar computación en la nube para trabajar con \textit{MLOps}       & 6 & 3  & 18 & - & - & - \\ \hline
+Falta de experiencia en uso de MLOps & 8 &  7  &  56   &  4*  & 5* & 20* \\ \hline
+Se requiere utilizar computación en la nube para trabajar con MLOps       & 6 & 3  & 18 & - & - & - \\ \hline
 \end{tabularx}%
 \end{table}
 
@@ -1004,16 +1004,16 @@ Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplic
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
 Riesgo 2 (falla o ruptura del equipo de trabajo):
-el plan de mitigación de este riesgo consiste en buscar alternativas para el desarrollo del proyecto, como así también para el almacenamiento del código fuente. Se utilizará \textit{GitHub} para almacenar el código, el cual será subido frecuentemente para evitar pérdidas (mínimo, una vez por semana). Como alternativa de desarrollo, se utilizará \textit{Google Colab}, el cual permitirá ejecutar el código en la nube mientras se repara el equipo original o se busca uno nuevo.
+el plan de mitigación de este riesgo consiste en buscar alternativas para el desarrollo del proyecto, como así también para el almacenamiento del código fuente. Se utilizará GitHub para almacenar el código, el que será subido frecuentemente para evitar pérdidas (mínimo, una vez por semana). Como alternativa de desarrollo, se utilizará Google Colab, el que permitirá ejecutar el código en la nube mientras se repara el equipo original o se busca uno nuevo.
 \begin{itemize}
-	\item Severidad (4*): el impacto será menor que el original. Si ocurriese, solamente se tendrá que adaptar al uso de \textit{Google Colab} mientras se busca un equipo alternativo.
-	\item Probabilidad de ocurrencia (5*): la probabilidad que ocurra seguirá siendo la misma.
+	\item Severidad (4*): el impacto será menor que el original. Si ocurriese, solamente se tendrá que adaptar al uso de Google Colab mientras se busca un equipo alternativo.
+	\item Probabilidad de ocurrencia (5*): la probabilidad que ocurra será la misma.
 \end{itemize}
 
-Riesgo 4 (Falta de experiencia en uso de \textit{MLOps}):
-para mitigar este riesgo se buscarán ejemplos prácticos de implementación de \textit{MLOps} en ambientes locales durante las etapas tempranas del proyecto. Se hará énfasis en que dicho ejemplos tengan buenas prácticas de codificación y de despliegue. Si bien esto no satisface la falta de experiencia, por lo menos se tendrán ejemplos útiles en los cuales basarse al momento de trabajar con \textit{MLOps}.
+Riesgo 4 (Falta de experiencia en uso de MLOps):
+para mitigar este riesgo se buscarán ejemplos prácticos de implementación de MLOps en ambientes locales durante las etapas tempranas del proyecto. Se hará énfasis en que dicho ejemplos tengan buenas prácticas de codificación y de despliegue. Si bien esto no satisface la falta de experiencia, por lo menos se tendrán ejemplos útiles en los que basarse al momento de trabajar con MLOps.
 \begin{itemize}
-    \item Severidad (5*): al tener ejemplos prácticos útiles en los cuales basarse, el impacto de este riesgo se verá disminuído.
+    \item Severidad (5*): al tener ejemplos prácticos útiles en los que basarse, el impacto de este riesgo se verá disminuído.
     \item Probabilidad de ocurrencia (5*): al buscar ejemplos prácticos útiles desde etapas tempranas, se puede disminuir la probabilidad de ocurrencia.
 \end{itemize}
  
@@ -1054,8 +1054,8 @@ para mitigar este riesgo se buscarán ejemplos prácticos de implementación de 
     & \multirow{-2}{=}[2em]{-} \\ \hline
 %=======================================================================================================================================%
     & Implementar modelo \textit{XGBoost}, sin considerar \textit{feature engineering} & & & \\ \cline{2-2}
-\multirow{-2}{=}[5em]{HU4 - Implementación de modelos de \textit{Machine Learning}}
-    & Implementar modelo \textit{XGBoost}, considerando \textit{feature engineering}
+\multirow{-2}{=}[5em]{HU4 - Implementación de modelos de \textit{machine learning}}
+    & Implementar modelo \textit{XGBoost}, con \textit{feature engineering}
     & \multirow{-2}{=}[5em]{Implementación de modelo \textit{XGBoost}, con y sin \textit{feature engineering}}
     & \multirow{-2}{=}[5em]{Modelo \textit{XGBoost} realiza predicciones sobre dataset de \textit{test}}
     & \multirow{-2}{=}[5em]{Dependencia con resultados de HU1 - Análisis exploratorio y HU3 - \textit{Feature Engineering}} \\ \hline
@@ -1063,20 +1063,20 @@ para mitigar este riesgo se buscarán ejemplos prácticos de implementación de 
 \pagebreak
     & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, sin  considerar \textit{feature engineering} & & & \\ \cline{2-2}
     & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, sin  considerar \textit{feature engineering}, y graficar & & & \\ \cline{2-2}
-    & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, considerando \textit{feature engineering} & & & \\ \cline{2-2}
+    & Obtener métricas de \textit{F1-score} para \textit{XGBoost}, con \textit{feature engineering} & & & \\ \cline{2-2}
 \multirow{-4}{=}[8em]{HU6 - Métricas de modelos}
-    & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, considerando \textit{feature engineering}, y graficar
+    & Obtener métricas de \textit{AUC-ROC} para \textit{XGBoost}, con \textit{feature engineering}, y graficar
     & \multirow{-4}{=}[8em]{Métricas para \textit{XGBoost}, con y son \textit{feature engineering}}
     & \multirow{-4}{=}[8em]{Valores numéricas para \textit{F1-score} y \textit{AUC-ROC} + gráfico de \textit{AUC-ROC}}
-    & \multirow{-4}{=}[8em]{Dependencia con resultados de HU4 - Implementación de modelos de \textit{Machine Learning}} \\ \hline
+    & \multirow{-4}{=}[8em]{Dependencia con resultados de HU4 - Implementación de modelos de \textit{machine learning}} \\ \hline
 %=======================================================================================================================================%
-    & Replicar técnicas de análisis de datos en entorno \textit{MLFlow} & & & \\ \cline{2-2}
-    & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno \textit{MLFlow} & & & \\ \cline{2-2}
-\multirow{-3}{=}[3em]{HU7 - Despliegue en \textit{MLFlow}}
-    & Replicar técnicas de evaluación de modelos en entorno \textit{MLFlow}
-    & \multirow{-3}{=}[3em]{Entorno \textit{MLFlow} desplegado localmente}
-    & \multirow{-3}{=}[3em]{Se puede acceder al entorno \textit{MLFlow} de manera local}
-    & \multirow{-3}{=}[8em]{Dependencia con resultados de HU1 - Análisis exploratorio, HU3 - \textit{Feature Engineering} y HU4 - Implementación de modelos de \textit{Machine Learning}} \\ \hline
+    & Replicar técnicas de análisis de datos en entorno MLFlow & & & \\ \cline{2-2}
+    & Replicar técnicas de entrenamiento de modelos de \textit{XGBoost} en entorno MLFlow & & & \\ \cline{2-2}
+\multirow{-3}{=}[3em]{HU7 - Despliegue en MLFlow}
+    & Replicar técnicas de evaluación de modelos en entorno MLFlow
+    & \multirow{-3}{=}[3em]{Entorno MLFlow desplegado localmente}
+    & \multirow{-3}{=}[3em]{Se puede acceder al entorno MLFlow de manera local}
+    & \multirow{-3}{=}[8em]{Dependencia con resultados de HU1 - Análisis exploratorio, HU3 - \textit{Feature Engineering} y HU4 - Implementación de modelos de \textit{machine learning}} \\ \hline
 \end{xltabular}
 %\end{tabular}
 %\end{table}
@@ -1118,11 +1118,11 @@ para mitigar este riesgo se buscarán ejemplos prácticos de implementación de 
 \textbf{Sprint tipo y N°} & \textbf{¿Qué hacer más?} & \textbf{¿Qué hacer menos?} & \textbf{¿Qué mantener?} & \textbf{¿Qué empezar a hacer?} & \textbf{¿Qué dejar de hacer?} \\
 \hline
 %========================================================================================================================================%
-Sprint técnico - 3 & Implementar modelos de \textit{Machine Learning} & Optimización de hiperparámetros & Buenas prácticas de código y documentación de decisiones tomadas & Identificar hiperparámetros para optimizar en futuros sprints técnicos & Correción de datos atípicos e implementación de \textit{feature engineering}. \\ \hline
-Sprint técnico - 6 & Obtener métricas \textit{f1-score} y \textit{AUC-ROC} para \textit{SVM} y \textit{Logistic Regression} & Explorar distintos modelos con y sin \textit{feature engineering} & Buenas prácticas de código y guardado de modelos en \textit{GitHub} & Gráficos para comparar métricas entre modelos & Identificar y optimizar hiperparámetros. \\ \hline
-Sprint técnico - 7 & Replicar etapas de análisis de datos en entorno \textit{MLFlow} & Comparación de modelos mediante métricas y gráficos & Persistir código en \textit{GitHub} y documentar decisiones tomadas & Prepar entorno \textit{MLFlow} para implementar modelos y sus comparaciones & Identificar, explorar y optimizar hiperparámetros de modelos. \\ \hline
-Sprint técnico - 8 & Replicar implementación de modelos en entorno \textit{MLFlow} & Replicar técnicas de Análisis de datos en entorno \textit{MLFlow} & Persistir código en \textit{GitHub} y documentar decisiones tomadas & Preparar entorno de \textit{MLFlow} para pruebas de \textit{APIs} necesarias & Identificar, explorar y optimizar hiperparámetros de modelos. \\ \hline
-Sprint no técnico - 10 & Confeccionar presentaciones para defensa final & Modificar contenido de memoria técnica & Pruebas para validar al entorno \textit{MLFlow} & Ensayos orales para la defensa & Modificar el código fuente. \\ \hline
+Sprint técnico - 3 & Implementar modelos de \textit{machine learning} & Optimización de hiperparámetros & Buenas prácticas de código y documentación de decisiones tomadas & Identificar hiperparámetros para optimizar en futuros sprints técnicos & Correción de datos atípicos e implementación de \textit{feature engineering}. \\ \hline
+Sprint técnico - 6 & Obtener métricas \textit{f1-score} y \textit{AUC-ROC} para \textit{SVM} y \textit{Logistic Regression} & Explorar distintos modelos con y sin \textit{feature engineering} & Buenas prácticas de código y guardado de modelos en GitHub & Gráficos para comparar métricas entre modelos & Identificar y optimizar hiperparámetros. \\ \hline
+Sprint técnico - 7 & Replicar etapas de análisis de datos en entorno MLFlow & Comparación de modelos mediante métricas y gráficos & Persistir código en GitHub y documentar decisiones tomadas & Prepar entorno MLFlow para implementar modelos y sus comparaciones & Identificar, explorar y optimizar hiperparámetros de modelos. \\ \hline
+Sprint técnico - 8 & Replicar implementación de modelos en entorno MLFlow & Replicar técnicas de Análisis de datos en entorno MLFlow & Persistir código en GitHub y documentar decisiones tomadas & Preparar entorno de MLFlow para pruebas de \textit{APIs} necesarias & Identificar, explorar y optimizar hiperparámetros de modelos. \\ \hline
+Sprint no técnico - 10 & Confeccionar presentaciones para defensa final & Modificar contenido de memoria técnica & Pruebas para validar al entorno MLFlow & Ensayos orales para la defensa & Modificar el código fuente. \\ \hline
 %========================================================================================================================================%
 \end{tabular}
 \end{table}
